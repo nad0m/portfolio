@@ -1,5 +1,6 @@
 import React from 'react';
 import { Icon, Button, Item, Label } from 'semantic-ui-react';
+import '../styles/colors.css';
 
 const paragraph = `Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit, sed do eiusmod 
@@ -19,13 +20,14 @@ const ProjectCard = () => (
           </Item.Meta>
           <Item.Description>{paragraph}</Item.Description>
           <Item.Extra>
-            <Button className="primary" floated='right'>
+            <button className='ui dracula button' style={{float:'right'}}>
               Live Demo
-              <Icon name='right chevron' />
-            </Button>
-            <Button color='black' floated='right'>
-              {`Source Code </>`}
-            </Button>
+              <Icon name='right window maximize outline' />
+            </button>
+            <button className='ui black button' style={{float:'right'}}>
+              View Source
+              <Icon name='right code branch' />
+            </button>
             <Label>Limited</Label>
             <Label>HTML</Label>
           </Item.Extra>

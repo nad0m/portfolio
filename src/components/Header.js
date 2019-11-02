@@ -4,7 +4,7 @@ import '../styles/header.scss';
 
 const Header = () => {
     return (
-        <div className="ui secondary menu">
+        <div className="ui secondary menu" style={{marginTop: '20px'}}>
             <div id="tabs" className="right menu">
                 <div className="item tab">
                     <span className="hover hover-1">

@@ -5,6 +5,8 @@ import MainTitle from './MainTitle';
 import Description from './Description';
 import Terminal from './Terminal';
 import SectionHeader from './SectionHeader';
+import Contact from './Contact';
+import Footer from './Footer';
 
 const App = () => {
     return (
@@ -13,8 +15,11 @@ const App = () => {
             <MainTitle />
             <Description />
             <Terminal />
-            <SectionHeader />
+            <SectionHeader title="Projects" iconName="folder" />
             <ProjectList />
+            <SectionHeader title="Contact" iconName="envelope" />
+            <Contact />
+            <Footer />
         </div>
     );
 }

@@ -6,16 +6,7 @@ const ProjectList = () => (
   <div>
       <ProjectCard />
       <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
+
   </div>
 )
 

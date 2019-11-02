@@ -1,0 +1,25 @@
+.dracula {
+    color: #6b75fe;
+}
+
+.background-dracula {
+    background-color: #6b75fe;
+}
+
+.ui.dracula.button {
+    background-color: #6b75fe;
+    color: #fff;
+    float:'right';
+}
+
+.ui.dracula.button:focus {
+    background-color: #6b75fe;
+    color: #fff;
+    filter: brightness(110%);
+}
+
+.ui.dracula.button:hover {
+    background-color: #6b75fe;
+    color: #fff;
+    filter: brightness(110%);
+}
