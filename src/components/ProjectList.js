@@ -1,14 +1,22 @@
 import React from 'react';
-import { Image, Item } from 'semantic-ui-react';
+import { Item } from 'semantic-ui-react';
 import ProjectCard from './ProjectCard';
 
 const ProjectList = () => (
-  <Item.Group divided>
+  <div>
       <ProjectCard />
       <ProjectCard />
       <ProjectCard />
       <ProjectCard />
-  </Item.Group>
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+  </div>
 )
 
 export default ProjectList;

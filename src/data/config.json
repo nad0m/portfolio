@@ -1,0 +1,11 @@
+{
+    "public": {
+        "name": "Adam Nguyen"
+    },
+    "projects":[
+        {
+            "id": 1,
+            "title": "My project"
+        }
+    ]
+}
