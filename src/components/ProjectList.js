@@ -1,5 +1,4 @@
 import React from 'react';
-import { Item } from 'semantic-ui-react';
 import ProjectCard from './ProjectCard';
 
 const ProjectList = () => (

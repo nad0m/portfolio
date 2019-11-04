@@ -1,6 +1,7 @@
 import React from 'react';
-import { Icon, Button, Item, Label } from 'semantic-ui-react';
+import { Icon, Item, Label } from 'semantic-ui-react';
 import '../styles/colors.css';
+import '../styles/projectcard.css';
 
 const paragraph = `Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit, sed do eiusmod 
@@ -20,16 +21,27 @@ const ProjectCard = () => (
           </Item.Meta>
           <Item.Description>{paragraph}</Item.Description>
           <Item.Extra>
-            <button className='ui dracula button' style={{float:'right'}}>
-              Live Demo
-              <Icon name='right window maximize outline' />
-            </button>
-            <button className='ui black button' style={{float:'right'}}>
-              View Source
-              <Icon name='right code branch' />
-            </button>
-            <Label>Limited</Label>
-            <Label>HTML</Label>
+            <div className="items">
+              <div className="tag-items">
+                <Label style={{margin:'5px'}}>Limited</Label>
+                <Label style={{margin:'5px'}}>HTML</Label>
+                <Label style={{margin:'5px'}}>Limited</Label>
+                <Label style={{margin:'5px'}}>HTML</Label>
+                <Label style={{margin:'5px'}}>Limited</Label>
+                <Label style={{margin:'5px'}}>HTML</Label>
+
+              </div>
+              <div className="button-items">
+                <button className='ui dracula button' style={{margin:'5px'}}>
+                  <Icon name='window maximize outline' />
+                  Live Demo
+                </button>
+                <button className='ui black button' style={{margin:'5px'}}>
+                  <Icon name='code branch' />
+                  View Source
+                </button>
+              </div>
+            </div>
           </Item.Extra>
         </Item.Content>
       </Item>  

@@ -1,0 +1,23 @@
+.items {
+    display: flex;
+}
+
+.button-items {
+    display: flex;
+    justify-self: flex-end;
+    margin: 5px auto;
+}
+
+.tag-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px auto;
+}
+
+@media all and (max-width: 1200px) {
+    .items {
+        flex-direction: column;
+    }
+}
