@@ -10,7 +10,7 @@
   
 .window-container {
     width: 100%;
-    height: 500px;
+    height: 450px;
     border: 1px solid #bbb;
     background: #1e1f29;
     border-radius: 7px;
@@ -25,10 +25,16 @@
     background: linear-gradient(rgb(226, 224, 226), rgb(199, 198, 200));
 }
 
+.window-description {
+    display: flex;
+    margin: auto;
+    justify-self: center;
+}
+
 .window-controls-btn {
     position: relative;
-    width: 12px;
-    height: 12px;
+    width: 13px;
+    height: 13px;
     margin-right: 8px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);

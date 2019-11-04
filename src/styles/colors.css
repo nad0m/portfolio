@@ -15,11 +15,11 @@
 .ui.dracula.button:focus {
     background-color: #6b75fe;
     color: #fff;
-    filter: brightness(110%);
+    filter: brightness(105%);
 }
 
 .ui.dracula.button:hover {
     background-color: #6b75fe;
     color: #fff;
-    filter: brightness(110%);
+    filter: brightness(105%);
 }
