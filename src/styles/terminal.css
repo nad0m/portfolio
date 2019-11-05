@@ -10,7 +10,7 @@
   
 .window-container {
     width: 100%;
-    height: 450px;
+    height: auto;
     border: 1px solid #bbb;
     background: #1e1f29;
     border-radius: 7px;
@@ -35,21 +35,23 @@
     position: relative;
     width: 13px;
     height: 13px;
-    margin-right: 8px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
 }
 
 .close-btn {
+    margin: 3.5px;
     background: rgb(227, 69, 69);
 }
 
 .minimize-btn {
+    margin: 3.5px;
     background: rgb(224, 178, 40);
 }
 
 .expand-btn {
+    margin: 3.5px;
     background: #42c933;
 }
 

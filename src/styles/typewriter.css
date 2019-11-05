@@ -3,6 +3,7 @@
     display: flex;
     font-size: 24px;
 }
+
 .typewriter h1 {
     color: #6b75fe;
     font-size: 2em;
@@ -15,7 +16,24 @@
     animation: 
       typing 1.5s steps(25, end),
       blink-caret 1.0s step-end infinite;
-  }
+}
+
+.typewriter-body-span {
+    margin: 15px;
+    display: flex;
+}
+
+.typewriter-span {
+    color: #fff;
+    font-family: monaco;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .50em solid #fff; ; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    /*margin: 0 auto;  Gives that scrolling effect as the typing happens */
+    letter-spacing: .50em; /* Adjust as needed */
+    animation: 
+      blink-caret-span 1.0s step-end infinite;
+}
 
 @media all and (max-width: 600px) {
     .typewriter h1 { font-size: 100%; }
@@ -31,4 +49,9 @@
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #6b75fe }
+}
+
+@keyframes blink-caret-span {
+    from, to { border-color: transparent }
+    50% { border-color: #fff }
 }

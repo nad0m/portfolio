@@ -1,6 +1,19 @@
 {
-    "public": {
-        "name": "Adam Nguyen"
+    "profile": {
+        "name": "Adam Nguyen",
+        "intro": "I am a software engineer from San Jose, CA. I enjoy creating modern, responsive, intuitive user experiences. Check out some of my projects below.",
+        "details": {
+            "location": "San Jose, CA",
+            "contact": [
+                {"adamdnguyen10@gmail.com": "mailto:adamdnguyen10@gmail.com"},
+                {"LinkedIn": "https://www.linkedin.com/in/an10/"},
+                {"GitHub": "https://github.com/swiftstrife"}
+            ],
+            "resume": {"adam-nguyen.pdf": "adam-nguyen.pdf"},
+            "interests": ["football", "bowling", "billiards", "snowboarding", "web development", "computer science"],
+            "education": "B.S. Computer Science - California State University, Monterey Bay",
+            "skills": ["Java", "JavaScript", "React", "Redux", "iOS Development", "Objective-C", "Swift", "Git"]
+        }
     },
     "projects":[
         {

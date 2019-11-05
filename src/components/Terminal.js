@@ -1,8 +1,9 @@
 import React from 'react';
+import Command from './Command';
 import '../styles/terminal.css';
+import '../styles/typewriter.css';
 
 class Terminal extends React.Component {
-
 
     state = {
         clientWidth: null,
@@ -25,6 +26,8 @@ class Terminal extends React.Component {
     }
 
     render() {
+        const { location, contact, resume, interests, education, skills } = this.props.data;
+
         return (
             <div className="terminal-container" ref={this.windowRef}>
                 <div className="window-container">
@@ -37,16 +40,17 @@ class Terminal extends React.Component {
                     </div>
     
                     <div className="window-content">
-                        <div>> Hello world</div>
-                        <div>> Hello world</div>
-                        <div>> Hello world</div>
-                        <div>> Hello world</div>
-                        <div>> Hello world</div>
-                        <div>> Hello world</div>
-                        <div>> Hello world</div>
-                        <div>> Hello world</div>
-                        <div>> Hello world</div>
-                        <div>> Hello world</div>
+                        <Command input="> Adam.location" output={location} />
+                        <Command input="> Adam.education" output={education} />
+                        <Command input="> Adam.skills" output={skills} />
+                        <Command input="> Adam.resume" output={resume} />
+                        <Command input="> Adam.contacts" output={contact} />
+                        <Command input="> Adam.interests" output={interests} />
+                        <div className="typewriter-body-span">
+                            <div className="typewriter-span">
+                                <span>> {}</span>
+                            </div> 
+                        </div>
                     </div>
                 </div>
             </div>
