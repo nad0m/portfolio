@@ -29,7 +29,6 @@ const parseObject = (obj) => {
     const keys = Object.keys(obj);
     const values = Object.values(obj);
 
-    console.log(pdf);
     if (keys[0] === 'resume') {
         return <a href={pdf} target="_blank" rel="noopener noreferrer" key={values[0]}>{values[0]}</a>
     }
