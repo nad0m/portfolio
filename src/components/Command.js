@@ -28,7 +28,7 @@ const parseObject = (obj) => {
     const keys = Object.keys(obj);
     const values = Object.values(obj);
 
-    return <a href={values[0]} target="_blank" key={keys[0]}>{keys[0]}</a>
+    return <a href={values[0]} target="_blank" rel="noopener noreferrer" key={keys[0]}>{keys[0]}</a>
 }
 
 const toArray = (arr) => {
