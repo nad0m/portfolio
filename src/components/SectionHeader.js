@@ -3,7 +3,7 @@ import '../styles/sections.css';
 import '../styles/colors.css';
 
 
-const SectionHeader = ({ iconName, title }) => {
+const SectionHeader = ({ iconName, title, id }) => {
 
     const icon = (iconName) => {
         switch (iconName) {
@@ -18,7 +18,7 @@ const SectionHeader = ({ iconName, title }) => {
     }
 
     return (
-        <div className="section-title">
+        <div id={id} className="section-title">
             <h2 className="ui icon header">
                 {icon(iconName)}
                 <div className="content dracula">

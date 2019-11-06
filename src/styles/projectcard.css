@@ -4,8 +4,9 @@
 
 .button-items {
     display: flex;
-    justify-self: flex-end;
-    margin: 5px auto;
+    justify-content: flex-end;
+    margin: 5px;
+    width: 40%;
 }
 
 .tag-items {
@@ -19,5 +20,10 @@
 @media all and (max-width: 1200px) {
     .items {
         flex-direction: column;
+    }
+
+    .button-items {
+        margin: 5px auto;
+        width: auto;
     }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import pdf from '../data/adamnguyen_resume.pdf';
 
 const parseOutput = (val) => {
 
@@ -28,6 +29,11 @@ const parseObject = (obj) => {
     const keys = Object.keys(obj);
     const values = Object.values(obj);
 
+    console.log(pdf);
+    if (keys[0] === 'resume') {
+        return <a href={pdf} target="_blank" rel="noopener noreferrer" key={values[0]}>{values[0]}</a>
+    }
+        
     return <a href={values[0]} target="_blank" rel="noopener noreferrer" key={keys[0]}>{keys[0]}</a>
 }
 

@@ -9,7 +9,7 @@
                 {"LinkedIn": "https://www.linkedin.com/in/an10/"},
                 {"GitHub": "https://github.com/swiftstrife"}
             ],
-            "resume": {"adam-nguyen.pdf": "adam-nguyen.pdf"},
+            "resume": {"resume": "adamnguyen_resume.pdf"},
             "interests": ["football", "bowling", "billiards", "snowboarding", "web development", "computer science"],
             "education": "B.S. Computer Science - California State University, Monterey Bay",
             "skills": ["Java", "JavaScript", "React", "Redux", "iOS Development", "Objective-C", "Swift", "Git"]
@@ -17,8 +17,137 @@
     },
     "projects":[
         {
-            "id": 1,
-            "title": "My project"
+            "title": "Video Search",
+            "type": "Web Application",
+            "description": 
+                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+            "skills": ["HTML5", "CSS3", "JavaScript", "ReactJS", "ES6"],
+            "image": "video-search.png",
+            "links": {
+                "demo": "https://swiftstrife.github.io/video-search/",
+                "source": "https://github.com/swiftstrife/video-search"
+            }
+        },
+        {
+            "title": "Image Search",
+            "type": "Web Application",
+            "description": 
+                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+            "skills": ["HTML5", "CSS3", "JavaScript", "ReactJS", "ES6"],
+            "image": "image-search.png",
+            "links": {
+                "demo": "https://swiftstrife.github.io/image-search/",
+                "source": "https://github.com/swiftstrife/image-search"
+            }
+        },
+        {
+            "title": "Pomodoro Clock",
+            "type": "Web Application",
+            "description": 
+                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+            "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
+            "image": "pomodoro.jpg",
+            "links": {
+                "demo": "https://swiftstrife.github.io/pomodoro-clock/",
+                "source": "https://github.com/swiftstrife/pomodoro-clock"
+            }
+        },
+        {
+            "title": "Simon Says",
+            "type": "Web Application",
+            "description": 
+                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+            "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
+            "image": "simon.jpg",
+            "links": {
+                "demo": "https://swiftstrife.github.io/simon/",
+                "source": "https://github.com/swiftstrife/simon"
+            }
+        },
+        {
+            "title": "Wikipedia Viewer",
+            "type": "Web Application",
+            "description": 
+                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+            "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
+            "image": "wikipedia.png",
+            "links": {
+                "demo": "https://swiftstrife.github.io/wikipedia-viewer/",
+                "source": "https://github.com/swiftstrife/wikipedia-viewer"
+            }
+        },
+        {
+            "title": "Pattern Serializer and Deserializer",
+            "type": "Java Application",
+            "description": 
+                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+            "skills": ["Java"],
+            "image": "barcode.png",
+            "links": {
+                "demo": null,
+                "source": "https://github.com/swiftstrife/barcode-scanner"
+            }
+        },
+        {
+            "title": "Cataclysm Boardgame",
+            "type": "Web Application",
+            "description": 
+                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+            "skills": ["HTML5", "CSS3", "JavaScript", "NodeJS", "Phaser.io", "MySQL"],
+            "image": "cataclysm.jpg",
+            "links": {
+                "demo": "https://cataclysm-capstone.herokuapp.com/",
+                "source": "https://github.com/swiftstrife/cataclysm-boardgame"
+            }
+        },
+        {
+            "title": "Tic-Tac-Toe",
+            "type": "Web Application",
+            "description": 
+                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+            "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
+            "image": "tictactoe.jpg",
+            "links": {
+                "demo": "https://swiftstrife.github.io/tictactoe/",
+                "source": "https://github.com/swiftstrife/tictactoe"
+            }
+        },
+        {
+            "title": "Portfolio (this page)",
+            "type": "Web Application",
+            "description": 
+                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+            "skills": ["HTML5", "CSS3", "JavaScript", "ReactJS", "ES6"],
+            "image": "portfolio.png",
+            "links": {
+                "demo": "https://swiftstrife.github.io/portfolio/",
+                "source": "https://github.com/swiftstrife/portfolio"
+            }
+        },
+        {
+            "title": "Fever Scout",
+            "type": "iOS App",
+            "description": 
+                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+            "skills": ["Objective-C", "Swift"],
+            "image": "fever.png",
+            "links": {
+                "demo": "https://apps.apple.com/us/app/fever-scout/id1095852565",
+                "source": null
+            }
+        },
+        {
+            "title": "Vital Scout",
+            "type": "iOS App",
+            "description": 
+                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+            "skills": ["Objective-C", "Swift"],
+            "image": "vital.png",
+            "links": {
+                "demo": "https://apps.apple.com/us/app/vital-scout/id1227969468",
+                "source": null
+            }
         }
+
     ]
 }

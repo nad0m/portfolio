@@ -18,9 +18,9 @@ const App = () => {
             <MainTitle text={profile.name}/>
             <Description text={profile.intro}/>
             <Terminal data={profile.details} />
-            <SectionHeader title="Projects" iconName="folder" />
-            <ProjectList />
-            <SectionHeader title="Contact" iconName="envelope" />
+            <SectionHeader id="projects" title="Projects" iconName="folder" />
+            <ProjectList data={projects} />
+            <SectionHeader id="contact" title="Contact" iconName="envelope" />
             <Contact />
             <Footer />
         </div>

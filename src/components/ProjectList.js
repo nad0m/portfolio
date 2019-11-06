@@ -1,12 +1,17 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 
-const ProjectList = () => (
-  <div>
-      <ProjectCard />
-      <ProjectCard />
+const ProjectList = ({ data }) => {
+  
+  const list = data.map((project) => {
+    return <ProjectCard key={project.title} project={project} />
+  });
 
-  </div>
-)
+  return (
+    <div>
+      {list}
+    </div>
+  );
+}
 
 export default ProjectList;
