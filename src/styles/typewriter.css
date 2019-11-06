@@ -36,7 +36,7 @@
 }
 
 @media all and (max-width: 600px) {
-    .typewriter h1 { font-size: 100%; }
+    .typewriter h1 { font-size: 130%; }
 }
   
 /* The typing effect */

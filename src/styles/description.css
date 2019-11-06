@@ -6,3 +6,7 @@
     margin: 2.5em 0;
     width: 75%;
 }
+
+@media all and (max-width: 900px) {
+    .title-description { width: 100%; }
+}
