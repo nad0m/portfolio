@@ -7,7 +7,7 @@
             "contact": [
                 {"adamdnguyen10@gmail.com": "mailto:adamdnguyen10@gmail.com"},
                 {"LinkedIn": "https://www.linkedin.com/in/an10/"},
-                {"GitHub": "https://github.com/swiftstrife"}
+                {"GitHub": "https://github.com/nad0m"}
             ],
             "resume": {"resume": "adamnguyen_resume.pdf"},
             "interests": ["football", "bowling", "billiards", "snowboarding", "web development", "computer science"],
@@ -24,8 +24,8 @@
             "skills": ["HTML5", "CSS3", "JavaScript", "ReactJS", "ES6"],
             "image": "video-search.png",
             "links": {
-                "demo": "https://swiftstrife.github.io/video-search/",
-                "source": "https://github.com/swiftstrife/video-search"
+                "demo": "https://nad0m.github.io/video-search/",
+                "source": "https://github.com/nad0m/video-search"
             }
         },
         {
@@ -36,8 +36,8 @@
             "skills": ["HTML5", "CSS3", "JavaScript", "ReactJS", "ES6"],
             "image": "image-search.png",
             "links": {
-                "demo": "https://swiftstrife.github.io/image-search/",
-                "source": "https://github.com/swiftstrife/image-search"
+                "demo": "https://nad0m.github.io/image-search/",
+                "source": "https://github.com/nad0m/image-search"
             }
         },
         {
@@ -49,7 +49,7 @@
             "image": "barcode.png",
             "links": {
                 "demo": null,
-                "source": "https://github.com/swiftstrife/barcode-scanner"
+                "source": "https://github.com/nad0m/barcode-scanner"
             }
         },
         {
@@ -61,7 +61,7 @@
             "image": "cataclysm.jpg",
             "links": {
                 "demo": "https://cataclysm-capstone.herokuapp.com/",
-                "source": "https://github.com/swiftstrife/cataclysm-boardgame"
+                "source": "https://github.com/nad0m/cataclysm-boardgame"
             }
         },
         {
@@ -72,8 +72,8 @@
             "skills": ["HTML5", "CSS3", "JavaScript", "ReactJS", "ES6"],
             "image": "portfolio.png",
             "links": {
-                "demo": "https://swiftstrife.github.io/portfolio/",
-                "source": "https://github.com/swiftstrife/portfolio"
+                "demo": "https://nad0m.github.io/portfolio/",
+                "source": "https://github.com/nad0m/portfolio"
             }
         },
         {
@@ -108,8 +108,8 @@
             "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
             "image": "pomodoro.jpg",
             "links": {
-                "demo": "https://swiftstrife.github.io/pomodoro-clock/",
-                "source": "https://github.com/swiftstrife/pomodoro-clock"
+                "demo": "https://nad0m.github.io/pomodoro-clock/",
+                "source": "https://github.com/nad0m/pomodoro-clock"
             }
         },
         {
@@ -120,8 +120,8 @@
             "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
             "image": "simon.jpg",
             "links": {
-                "demo": "https://swiftstrife.github.io/simon/",
-                "source": "https://github.com/swiftstrife/simon"
+                "demo": "https://nad0m.github.io/simon/",
+                "source": "https://github.com/nad0m/simon"
             }
         },
         {
@@ -132,8 +132,8 @@
             "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
             "image": "wikipedia.png",
             "links": {
-                "demo": "https://swiftstrife.github.io/wikipedia-viewer/",
-                "source": "https://github.com/swiftstrife/wikipedia-viewer"
+                "demo": "https://nad0m.github.io/wikipedia-viewer/",
+                "source": "https://github.com/nad0m/wikipedia-viewer"
             }
         },
         {
@@ -144,8 +144,8 @@
             "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
             "image": "tictactoe.jpg",
             "links": {
-                "demo": "https://swiftstrife.github.io/tictactoe/",
-                "source": "https://github.com/swiftstrife/tictactoe"
+                "demo": "https://nad0m.github.io/tictactoe/",
+                "source": "https://github.com/nad0m/tictactoe"
             }
         }
 
