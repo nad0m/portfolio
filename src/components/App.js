@@ -21,7 +21,7 @@ const App = () => {
             <SectionHeader id="projects" title="Projects" iconName="folder" />
             <ProjectList data={projects} />
             <SectionHeader id="contact" title="Contact" iconName="envelope" />
-            <Contact />
+            <Contact links={ profile.details.contact } />
             <Footer />
         </div>
     );

@@ -32,7 +32,7 @@
             "title": "Image Search",
             "type": "Web Application",
             "description": 
-                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+                "An image search application that uses the Unsplash API to retrieve relevant results. CSS Grid layout is used to handle the scaling of image sizes to fit neatly in the container.",
             "skills": ["HTML5", "CSS3", "JavaScript", "ReactJS", "ES6"],
             "image": "image-search.png",
             "links": {
@@ -41,46 +41,10 @@
             }
         },
         {
-            "title": "Pomodoro Clock",
-            "type": "Web Application",
-            "description": 
-                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
-            "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
-            "image": "pomodoro.jpg",
-            "links": {
-                "demo": "https://swiftstrife.github.io/pomodoro-clock/",
-                "source": "https://github.com/swiftstrife/pomodoro-clock"
-            }
-        },
-        {
-            "title": "Simon Says",
-            "type": "Web Application",
-            "description": 
-                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
-            "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
-            "image": "simon.jpg",
-            "links": {
-                "demo": "https://swiftstrife.github.io/simon/",
-                "source": "https://github.com/swiftstrife/simon"
-            }
-        },
-        {
-            "title": "Wikipedia Viewer",
-            "type": "Web Application",
-            "description": 
-                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
-            "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
-            "image": "wikipedia.png",
-            "links": {
-                "demo": "https://swiftstrife.github.io/wikipedia-viewer/",
-                "source": "https://github.com/swiftstrife/wikipedia-viewer"
-            }
-        },
-        {
             "title": "Pattern Serializer and Deserializer",
             "type": "Java Application",
             "description": 
-                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+                "A tool for encoding and decoding secret messages in the form of a string image. Similar to how barcodes work, the tool reads in a series of asterisks as input and provides the decoded message as output. Alternatively, a message can be encoded into a series of asterisks.",
             "skills": ["Java"],
             "image": "barcode.png",
             "links": {
@@ -92,7 +56,7 @@
             "title": "Cataclysm Boardgame",
             "type": "Web Application",
             "description": 
-                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+                "My capstone project done in my final year of college. The game is an emulation of a board game that can be played through multiple clients online in real time.",
             "skills": ["HTML5", "CSS3", "JavaScript", "NodeJS", "Phaser.io", "MySQL"],
             "image": "cataclysm.jpg",
             "links": {
@@ -101,22 +65,10 @@
             }
         },
         {
-            "title": "Tic-Tac-Toe",
-            "type": "Web Application",
-            "description": 
-                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
-            "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
-            "image": "tictactoe.jpg",
-            "links": {
-                "demo": "https://swiftstrife.github.io/tictactoe/",
-                "source": "https://github.com/swiftstrife/tictactoe"
-            }
-        },
-        {
             "title": "Portfolio (this page)",
             "type": "Web Application",
             "description": 
-                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+                "A responsive website built using ReactJS to showcase my side projects. The goal was to not hard code any data into any components and only rely on external data sources such as an API or a local JSON file. This makes the site easy to maintain and reusable as a portfolio template.",
             "skills": ["HTML5", "CSS3", "JavaScript", "ReactJS", "ES6"],
             "image": "portfolio.png",
             "links": {
@@ -128,7 +80,7 @@
             "title": "Fever Scout",
             "type": "iOS App",
             "description": 
-                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+                "My first professional mobile development project built at my last company, VivaLNK. The app pairs with proprietary temperature sensors via Bluetooth and detects sharp temperature changes on the human body over time.",
             "skills": ["Objective-C", "Swift"],
             "image": "fever.png",
             "links": {
@@ -140,12 +92,60 @@
             "title": "Vital Scout",
             "type": "iOS App",
             "description": 
-                "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+                "A professional mobile development project built at my last company, VivaLNK. The app integrates directly with proprietary Bluetooth devices that displays wellness data onto screen.",
             "skills": ["Objective-C", "Swift"],
             "image": "vital.png",
             "links": {
                 "demo": "https://apps.apple.com/us/app/vital-scout/id1227969468",
                 "source": null
+            }
+        },
+        {
+            "title": "Pomodoro Clock",
+            "type": "Web Application",
+            "description": 
+                "The Pomodoro technique is a time management method that uses a timer to break down work into intervals. This simple app is used as the timer with customizable intervals.",
+            "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
+            "image": "pomodoro.jpg",
+            "links": {
+                "demo": "https://swiftstrife.github.io/pomodoro-clock/",
+                "source": "https://github.com/swiftstrife/pomodoro-clock"
+            }
+        },
+        {
+            "title": "Simon Says",
+            "type": "Web Application",
+            "description": 
+                "Simon is a memory game that creates a series of tones and lights and requires a user to repeat the sequence. This was the project where my deep dive into CSS and its intricacies occurred. It was a tremendoes learning experience.",
+            "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
+            "image": "simon.jpg",
+            "links": {
+                "demo": "https://swiftstrife.github.io/simon/",
+                "source": "https://github.com/swiftstrife/simon"
+            }
+        },
+        {
+            "title": "Wikipedia Viewer",
+            "type": "Web Application",
+            "description": 
+                "An application that uses the Wikipedia API to return search results in the form of an thumbnail image and a brief description of each entry.",
+            "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
+            "image": "wikipedia.png",
+            "links": {
+                "demo": "https://swiftstrife.github.io/wikipedia-viewer/",
+                "source": "https://github.com/swiftstrife/wikipedia-viewer"
+            }
+        },
+        {
+            "title": "Tic-Tac-Toe",
+            "type": "Web Application",
+            "description": 
+                "One of my very first web projects. This application is a simple Tic-Tac-Toe game that is played against an opponent using the Min-Max algorithm.",
+            "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
+            "image": "tictactoe.jpg",
+            "links": {
+                "demo": "https://swiftstrife.github.io/tictactoe/",
+                "source": "https://github.com/swiftstrife/tictactoe"
             }
         }
 
