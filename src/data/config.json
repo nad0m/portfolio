@@ -116,7 +116,7 @@
             "title": "Simon Says",
             "type": "Web Application",
             "description": 
-                "Simon is a memory game that creates a series of tones and lights and requires a user to repeat the sequence. This was the project where my deep dive into CSS and its intricacies occurred. It was a tremendoes learning experience.",
+                "Simon is a memory game that creates a series of tones and lights and requires a user to repeat the sequence. This was the project where my deep dive into CSS and its intricacies occurred. It was a tremendous learning experience.",
             "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
             "image": "simon.jpg",
             "links": {
@@ -128,7 +128,7 @@
             "title": "Wikipedia Viewer",
             "type": "Web Application",
             "description": 
-                "An application that uses the Wikipedia API to return search results in the form of an thumbnail image and a brief description of each entry.",
+                "An application that uses the Wikipedia API to return search results in the form of a thumbnail image and a brief description of each entry.",
             "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"],
             "image": "wikipedia.png",
             "links": {

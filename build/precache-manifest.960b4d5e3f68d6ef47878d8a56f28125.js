@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "903e550d2078c3dc33aa448d992a2c95",
+    "revision": "ac59f6d6f8c6fcc3cd801397b5e5b556",
     "url": "/portfolio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/css/2.7eafa3a7.chunk.css"
   },
   {
-    "revision": "5d19716aecd35fc61130",
+    "revision": "d7ad2f59e15ceb7e861d",
     "url": "/portfolio/static/css/main.daa1e690.chunk.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.002ad7e2.chunk.js"
   },
   {
-    "revision": "5d19716aecd35fc61130",
-    "url": "/portfolio/static/js/main.69bf4b97.chunk.js"
+    "revision": "d7ad2f59e15ceb7e861d",
+    "url": "/portfolio/static/js/main.30bcf31b.chunk.js"
   },
   {
     "revision": "76aa8cbd67b5c937ec2c",
     "url": "/portfolio/static/js/runtime-main.e92c632a.js"
   },
   {
-    "revision": "4af4a466f64bca11a8d0a633b4ad2ea9",
-    "url": "/portfolio/static/media/adamnguyen_resume.4af4a466.pdf"
+    "revision": "1a628da09d7d81740406c664f36311b4",
+    "url": "/portfolio/static/media/adamnguyen_resume.1a628da0.pdf"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
