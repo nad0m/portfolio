@@ -9,9 +9,12 @@ import portfolio from './portfolio.png';
 import tictactoe from './tictactoe.jpg';
 import fever from './fever.png';
 import vital from './vital.png';
+import yahoo from './yahoo.png';
 
 export default (image) => {
     switch(image) {
+        case 'yahoo.png':
+            return yahoo;
         case 'video-search.png':
             return videosearch;
         case 'image-search.png':

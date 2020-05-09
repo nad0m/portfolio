@@ -1,7 +1,7 @@
 {
     "profile": {
         "name": "Adam Nguyen",
-        "intro": "I am a software engineer from San Jose, CA. I enjoy creating modern, responsive, intuitive user experiences. Check out some of my projects below.",
+        "intro": "I am a software engineer at Verizon Media currently developing front-end and user enhancement features for Yahoo! Shopping. I enjoy creating modern, responsive, intuitive user experiences. Check out some of my projects below.",
         "details": {
             "location": "San Jose, CA",
             "contact": [
@@ -12,10 +12,22 @@
             "resume": {"resume": "adamnguyen_resume.pdf"},
             "interests": ["football", "bowling", "billiards", "snowboarding", "web development", "computer science"],
             "education": "B.S. Computer Science - California State University, Monterey Bay",
-            "skills": ["Java", "JavaScript", "React", "Redux", "iOS Development", "Objective-C", "Swift", "Git"]
+            "skills": ["Java", "JavaScript", "React", "Redux", "GraphQL", "iOS Development", "Objective-C", "Swift", "Git"]
         }
     },
     "projects":[
+        {
+            "title": "Yahoo! Shopping",
+            "type": "Web Application",
+            "description": 
+                "Yahoo! Shopping brings products and deals to valued customers through online discovery and inspiration.",
+            "skills": ["HTML5", "CSS3", "JavaScript", "ReactJS", "ES6", "GraphQL"],
+            "image": "yahoo.png",
+            "links": {
+                "demo": "https://shopping.yahoo.com",
+                "source": null
+            }
+        },        
         {
             "title": "Video Search",
             "type": "Web Application",
