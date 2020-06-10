@@ -7,7 +7,7 @@
 .typewriter h1 {
     color: #6b75fe;
     font-size: 2em;
-    font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
+    font-family: 'Courier Prime', monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .50em solid #6b75fe ; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
