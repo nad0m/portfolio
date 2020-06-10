@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6efb5915.chunk.css",
+    "main.css": "/portfolio/static/css/main.a7aac81c.chunk.css",
     "main.js": "/portfolio/static/js/main.fd40213b.chunk.js",
     "main.js.map": "/portfolio/static/js/main.fd40213b.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.e92c632a.js",
@@ -9,10 +9,10 @@
     "static/js/2.997ae580.chunk.js": "/portfolio/static/js/2.997ae580.chunk.js",
     "static/js/2.997ae580.chunk.js.map": "/portfolio/static/js/2.997ae580.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.2667b9e58c99299f0b9c03c64b939c98.js": "/portfolio/precache-manifest.2667b9e58c99299f0b9c03c64b939c98.js",
+    "precache-manifest.58ed407bad5d46a1c6e9b2cc50dd3a89.js": "/portfolio/precache-manifest.58ed407bad5d46a1c6e9b2cc50dd3a89.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.7eafa3a7.chunk.css.map": "/portfolio/static/css/2.7eafa3a7.chunk.css.map",
-    "static/css/main.6efb5915.chunk.css.map": "/portfolio/static/css/main.6efb5915.chunk.css.map",
+    "static/css/main.a7aac81c.chunk.css.map": "/portfolio/static/css/main.a7aac81c.chunk.css.map",
     "static/media/adamnguyen_resume.pdf": "/portfolio/static/media/adamnguyen_resume.933578a8.pdf",
     "static/media/semantic.min.css": "/portfolio/static/media/outline-icons.ef60a4f6.woff",
     "static/media/cataclysm.jpg": "/portfolio/static/media/cataclysm.4fc59a9f.jpg",
@@ -30,7 +30,7 @@
     "static/js/runtime-main.e92c632a.js",
     "static/css/2.7eafa3a7.chunk.css",
     "static/js/2.997ae580.chunk.js",
-    "static/css/main.6efb5915.chunk.css",
+    "static/css/main.a7aac81c.chunk.css",
     "static/js/main.fd40213b.chunk.js"
   ]
 }
