@@ -2,11 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Border = styled.div`
-  border-top: 2px solid ${({ theme }) => theme.colors.accentText};
+  border-top: 1px solid ${({ theme }) => theme.colors.accentText};
   position: absolute;
   top: 0;
   width: 0;
-  transition: width 0.3s ease-out;
+  transition: width 0.2s ease-out;
 `
 
 const Anchor = styled.a`
@@ -23,10 +23,9 @@ const Item = styled.li`
   list-style: none;
   &:hover > ${Border} {
     width: 100%;
-    transition: width 0.2s ease-in;
+    transition: width 0.3s ease-in;
   }
   &:hover > ${Anchor} {
-    font-weight: bold;
     color: ${({ theme }) => theme.colors.accentText};
   }
 `
