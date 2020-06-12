@@ -8,6 +8,7 @@ import Banner from '../components/Banner'
 import Navigation from '../components/Navigation'
 import SideBar from '../components/SideBar'
 import TypeWriter from '../components/TypeWriter'
+import Terminal from '../components/Terminal'
 
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
         <Navigation />
         <TypeWriter text="Adam Nguyen" />
         <ContentContainer>
+        <Terminal />
           <p>
             Colors play a vital role in making a web page usable or not. In CSS, we can control the foreground and background color of an element with the color and background properties. When I learned CSS back in the years, there wasn’t a straightforward guide or way to learn how to use colors in CSS.
 

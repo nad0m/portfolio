@@ -6,7 +6,7 @@ const Border = styled.div`
   position: absolute;
   top: 0;
   width: 0;
-  transition: width 0.2s ease-out;
+  transition: width 0.1s ease-out;
 `
 
 const Anchor = styled.a`
@@ -23,7 +23,7 @@ const Item = styled.li`
   list-style: none;
   &:hover > ${Border} {
     width: 100%;
-    transition: width 0.3s ease-in;
+    transition: width 0.2s ease-out;
   }
   &:hover > ${Anchor} {
     color: ${({ theme }) => theme.colors.accentText};

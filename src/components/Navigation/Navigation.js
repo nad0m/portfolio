@@ -5,7 +5,7 @@ import NavItem from './NavItem'
 
 const Wrapper = styled.div`
   border-top: 1px solid ${({ theme }) => theme.colors.border};
-  margin: 3em 0;
+  margin: 3em 0 0;
   right: 0;
   width: 100%;
   height: 100px;
