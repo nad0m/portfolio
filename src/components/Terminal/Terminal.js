@@ -8,17 +8,16 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  font-family: 'Roboto Mono', monospace;
   border-radius: 7px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 100%;
+  font-size: 14px;
 `
 
 const Window = styled.div`
   width: 100%;
   height: auto;
   border: 1px solid #bbb;
-  background: #1e1f29;
   border-radius: 7px;
   display: flex;
   flex-direction: column;
@@ -33,11 +32,11 @@ const ButtonsContainer = styled.div`
 
 const WindowContent = styled.div`
   display: flex;
-  padding: 0 20px 20px;
+  padding: 20px;
   flex-direction: column;
   flex: 0 0 95%;
-  background: #1e1f29;
-  color: #fff;
+  background: #292d3e;
+  color: rgb(130, 170, 255);
 `
 
 const TypeWriterBody = styled.div`
@@ -52,7 +51,6 @@ const blinkCaret = keyframes`
 const TypeWriter = styled.div`
   display: inline;
   color: #fff;
-  font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
   overflow: hidden;
   border-right: .50em solid #fff;
   white-space: nowrap;
@@ -60,16 +58,44 @@ const TypeWriter = styled.div`
   animation: ${blinkCaret} .75s step-end infinite;
 
   &::before {
-    content: ">"
+    content: ">";
+    font-family: 'Rubik', 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
   }
+`
+
+const Button = styled.button`
+    position: relative;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 3.5px;
+    background: ${({ color }) => color};
+`
+
+const WindowHeader = styled.div`
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 `
 
 const Terminal = () => {
     return (
-        <Wrapper>
+        <Wrapper className="code">
             <Window>
                 <ButtonsContainer>
-                    hello
+                    <Button color="#e34545" />
+                    <Button color="#e0b228" />
+                    <Button color="#42c933" />
+                    <WindowHeader>
+                        Terminal
+                    </WindowHeader>
                 </ButtonsContainer>
                 <WindowContent>
                     <TypeWriterBody>

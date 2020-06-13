@@ -12,7 +12,7 @@ export default createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
-  code {
+  .code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }

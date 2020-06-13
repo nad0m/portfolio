@@ -12,7 +12,6 @@ const Wrapper = styled.div`
   width: 150px;
   height: 100%;
   overflow: visible;
-
   &::after {
     content: '';
     border-right: 1px solid ${({ theme }) => theme.colors.border};

@@ -49,13 +49,16 @@ const toArray = (arr) => {
 }
 
 const Wrapper = styled.div`
-  margin: 15px 0;
+  margin: 0 0 30px;
 `
 
 const Input = styled.div`
   &::before {
     content: ">";
     margin: 0 5px 0 0;
+    font-family: 'Rubik', 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
   }
 `
 
