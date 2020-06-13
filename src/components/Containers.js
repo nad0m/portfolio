@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import breakpoint from 'styled-components-breakpoint';
 
 
 export const MainContainer = styled.div`
@@ -11,9 +12,10 @@ export const MainContainer = styled.div`
 
 export const ContentContainer = styled.div`
   position: relative;
-  margin: 16px 150px;
+  margin: 16px 150px 60px;
+  min-width: 355px;
   max-width: 720px;
-  > p {
-    line-height: 1.5;
-  }
+  ${breakpoint('md')`
+    min-width: 0;
+  `}
 `

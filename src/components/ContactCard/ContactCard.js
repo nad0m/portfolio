@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import TagList from './TagList'
 import ButtonGroup from './ButtonGroup'
 
 const Wrapper = styled.div`
@@ -47,23 +46,21 @@ const Image = styled.img`
 `
 
 const ProjectCard = ({
-  title = 'Project title',
-  desc = 'Project description',
-  tags = [],
-  demo = '',
-  source = '',
-  imageUrl
+  title = 'Your name here',
+  desc = 'Contact me here',
+  email = '',
+  linkedin = '',
+  github = ''
 }) => {
   return (
     <Wrapper>
       <ImageWrapper>
-        <Image src="https://developers.google.com/youtube/images/youtube_home_page_player_api_720.png" />
+        <Image src="https://avatars2.githubusercontent.com/u/20848851?s=400&v=4" />
       </ImageWrapper>
       <Content>
         <h3>{title}</h3>
         <p>I decwill explain color types, specific keywords, and when to use which along with use-cases and examples. Disclaimer: this is not an article about color theory.</p>
-        <TagList />
-        <ButtonGroup />
+        <ButtonGroup links={{ email, linkedin, github }}/>
       </Content>
     </Wrapper>
   )
