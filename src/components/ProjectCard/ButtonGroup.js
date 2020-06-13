@@ -1,11 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import breakpoint from 'styled-components-breakpoint';
 import { LinkExternal, GitBranch } from '@styled-icons/boxicons-regular'
 
 const Wrapper = styled.div`
   display: flex;
-  font-size: 14px;
+  font-size: 10px;
+
+  > a {
+    min-width: 110px;
+  }
+
+  ${breakpoint('md')`
+    font-size: 14px;
+    > a {
+      min-width: 132px;
+    }
+  `}
 `
 
 const Button = styled.a`
@@ -22,7 +33,6 @@ const Button = styled.a`
   -moz-box-shadow: 0px 2px 13px 0px rgba(120,120,120,1);
   box-shadow: 0px 2px 13px 0px rgba(120,120,120,1);
   box-sizing: border-box;
-  min-width: 132px;
   > svg {
     margin: 0 0 0 5px;
   }

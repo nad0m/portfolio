@@ -3,7 +3,7 @@ const breakpoints = {
   xs: 360,
   sm: 480,
   md: 680,
-  lg: 1135, // collapsing point
+  lg: 1020,
   xl: 1375
 }
 

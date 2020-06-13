@@ -1,13 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
+import breakpoint from 'styled-components-breakpoint';
 
 import ButtonGroup from './ButtonGroup'
 
 const Wrapper = styled.div`
+  flex-direction: column;
   margin: 20px 0;
   display: flex;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  ${breakpoint('lg')`
+    flex-direction: row;
+  `}
+
+  ${breakpoint('md')`
+    margin: 25px 0 0 10px;
+  `}
 `
 
 const Content = styled.div`
@@ -15,7 +25,7 @@ const Content = styled.div`
   flex-direction: column;
   flex: 9;
   align-items: flex-start;
-  padding: 30px;
+  padding: 20px;
 
   > * {
     margin: 10px 0;
@@ -26,6 +36,10 @@ const Content = styled.div`
     line-height: 1.4;
   }
 
+  ${breakpoint('md')`
+    padding: 30px;
+  `}
+
 `
 
 const ImageWrapper = styled.div`
@@ -34,6 +48,12 @@ const ImageWrapper = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    padding-bottom: 65%;
+  }
 `
 
 const Image = styled.img`

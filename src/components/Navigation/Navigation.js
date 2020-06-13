@@ -9,10 +9,11 @@ const Wrapper = styled.div`
   margin: 1.5em 0 0;
   right: 0;
   width: 100%;
-  height: 100px;
+  height: 0;
 
   ${breakpoint('md')`
     margin: 3em 0 0;
+    height: 100px;
   `}
 `
 

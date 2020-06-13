@@ -5,24 +5,30 @@ import breakpoint from 'styled-components-breakpoint';
 export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
+  padding: 0 20px 0 0;
+
+  ${breakpoint('sm')`
+    align-items: center;
+  `}
+
 `
 
-
 export const ContentContainer = styled.div`
-  position: relative;
-  margin: 16px 50px 60px;
+  margin: 0 0 0 10px;
   min-width: 0;
   max-width: 720px;
   padding: 0 0 0 25px;
 
   ${breakpoint('sm')`
+    margin: 0 30px;
     min-width: 355px;
+    padding: 0 0 0 25px;
   `}
 
   ${breakpoint('md')`
-    margin: 16px 150px 60px 200px;
+    margin: 16px 150px 60px 150px;
     padding: 0;
     min-width: 0;
   `}

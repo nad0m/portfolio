@@ -1,11 +1,36 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import breakpoint from 'styled-components-breakpoint';
 import { Mail, SocialLinkedin, SocialGithub } from '@styled-icons/foundation'
 
 const Wrapper = styled.div`
   display: flex;
-  font-size: 14px;
+  font-size: 10px;
+
+  > a {
+    > span {
+      display: none;
+    }
+
+    > svg {
+      margin: 0;
+    }
+    min-width: 60px;
+  }
+
+  ${breakpoint('lg')`
+    font-size: 14px;
+    > a {
+      > span {
+        display: inline;
+      }
+
+      > svg {
+        margin: 0 0 0 5px;
+      }
+      min-width: 132px;
+    }
+  `}
 `
 
 const Button = styled.a`
@@ -23,9 +48,6 @@ const Button = styled.a`
   box-shadow: 0px 2px 13px 0px rgba(120,120,120,1);
   box-sizing: border-box;
   min-width: 106px;
-  > svg {
-    margin: 0 0 0 5px;
-  }
 
   &:hover {
     opacity: .9;
@@ -36,15 +58,15 @@ const ButtonGroup = ({ links: { email, linkedin, github } = {} }) => {
   return (
     <Wrapper>
       <Button href={email} background="#dd4b39">
-        Email
+        <span>Email</span>
         <Mail size="16" />
       </Button>
       <Button href={linkedin} background="#1f88be">
-        LinkedIn
+        <span>LinkedIn</span>
       <SocialLinkedin size="16" />
       </Button>
       <Button href={github} background="#1b1c1d">
-        GitHub
+        <span>GitHub</span>
       <SocialGithub size="16" />
       </Button>
     </Wrapper>
