@@ -1,11 +1,15 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
+import breakpoint from 'styled-components-breakpoint';
+
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  width: 100%;
+  margin: 0 0 0 25px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.border};
+  width: 85%;
+
 `
 const HeaderWrapper = styled.div`
   color: ${({ theme }) => theme.colors.accentText};

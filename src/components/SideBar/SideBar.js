@@ -6,12 +6,12 @@ import codeImg from './hero-image.png'
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   background-color: ${({ theme }) => theme.colors.background};
   position: absolute;
   top: 0;
   left: 0;
-  width: 50px;
+  width: 25px;
   height: 100%;
   overflow: visible;
   &::after {
@@ -20,13 +20,15 @@ const Wrapper = styled.div`
   }
 
   ${breakpoint('md')`
+    justify-content: center;
     width: 150px;
   `}
 `
 
 const Image = styled.img`
   position: absolute;
-  top: 0px;
+  top: -2px;
+  left: -3px;
   width: 38px;
   height: 38px;
   object-fit: contain;
@@ -37,6 +39,7 @@ const Image = styled.img`
 
   ${breakpoint('md')`
     top: 15px;
+    left: auto;
     width: 100px;
     height: 100px;
     background-color: #ededed;
