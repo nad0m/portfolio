@@ -18,7 +18,8 @@ export const theme = {
       imageBorder: '#fafafa',
       background: '#ffffff',
       demoButton: '#3863d9',
-      demoText: '#ffffff'
+      demoText: '#ffffff',
+      bannerBackground: '#ffffff'
     },
     isDark: false,
     breakpoints
@@ -33,7 +34,8 @@ export const theme = {
       imageBorder: '#424242',
       background: '#212121',
       demoButton: '#3863d9',
-      demoText: '#ffffff'
+      demoText: '#ffffff',
+      bannerBackground: '#121212'
     },
     isDark: true,
     breakpoints

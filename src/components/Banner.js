@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint';
 import { Sun, Moon } from '@styled-icons/boxicons-solid'
+import { RightArrowAlt } from '@styled-icons/boxicons-regular'
 
 const Wrapper = styled.div`
   position: relative;
@@ -9,9 +10,14 @@ const Wrapper = styled.div`
   align-items: center;
   padding: 16px;
   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.07);
+  background-color: ${({ theme }) => theme.colors.bannerBackground};
   color: ${({ theme }) => theme.colors.bannerText};
   z-index: 1;
   display: none;
+
+  > svg {
+    margin: 0 5px;
+  }
 
   ${breakpoint('md')`
     display: flex;
@@ -55,16 +61,46 @@ const Switch = styled.div`
   transition: right .1s ease-in-out;
 `
 
-const Banner = ({ text = 'Banner text here', isDarkMode, setIsDarkMode }) => {
+const MobileToggle = styled.button`
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #3863d9;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  color: #d9e2ec;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(2,43,148,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(2,43,148,1);
+  box-shadow: 0px 0px 5px 0px rgba(2,43,148,1);
+
+  ${breakpoint('md')`
+    display: none;
+  `}
+`
+
+const Banner = ({ text = 'Hey! Toggle between light and dark themes over here', isDarkMode, setIsDarkMode }) => {
   return (
-    <Wrapper>
-      {text}
-      <Toggle onClick={e => setIsDarkMode(!isDarkMode)}>
-        <Switch isDarkMode={isDarkMode} />
-        <Moon size="16" />
-        <Sun size="16" />
-      </Toggle>
-    </Wrapper>
+    <>
+      <Wrapper>
+        {text}
+        <RightArrowAlt size='24' />
+        <Toggle onClick={e => setIsDarkMode(!isDarkMode)}>
+          <Switch isDarkMode={isDarkMode} />
+          <Moon size="16" />
+          <Sun size="16" />
+        </Toggle>
+      </Wrapper>
+      <MobileToggle onClick={e => setIsDarkMode(!isDarkMode)}>
+        {isDarkMode ? <Moon size="30" /> : <Sun size="30" />}
+      </MobileToggle>
+    </>
   )
 }
 
