@@ -1,22 +1,26 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint';
+import useLazyImg from 'react-use-lazy-img'
 
+import fallbackImg from '../../assets/placeholder.jpg'
 import ButtonGroup from './ButtonGroup'
 
 const Wrapper = styled.div`
-  flex-direction: column;
-  margin: 20px 0;
   display: flex;
+  flex-direction: column;
+  margin: 25px 0;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-  ${breakpoint('lg')`
-    flex-direction: row;
-  `}
+  min-width: 0;
 
   ${breakpoint('md')`
     margin: 25px 0 0 10px;
+  `}
+
+  ${breakpoint('lg')`
+    min-width: 800px;
+    flex-direction: row;
   `}
 `
 
@@ -72,25 +76,26 @@ const Image = styled.img`
   `}
 `
 
-const ProjectCard = ({
+const ContactCard = ({
   title = 'Your name here',
   desc = 'Contact me here',
-  email = '',
-  linkedin = '',
-  github = ''
+  links = {},
+  avatar = ""
 }) => {
+  const imgElement = useRef(null)
+  const { imgSrc, onError } = useLazyImg(avatar, fallbackImg, imgElement)
   return (
     <Wrapper>
       <ImageWrapper>
-        <Image src="https://avatars2.githubusercontent.com/u/20848851?s=400&v=4" />
+        <Image src={imgSrc} ref={imgElement} onError={onError} />
       </ImageWrapper>
       <Content>
         <h3>{title}</h3>
-        <p>I decwill explain color types, specific keywords, and when to use which along with use-cases and examples. Disclaimer: this is not an article about color theory.</p>
-        <ButtonGroup links={{ email, linkedin, github }}/>
+        <p>{desc}</p>
+        <ButtonGroup links={links}/>
       </Content>
     </Wrapper>
   )
 }
 
-export default ProjectCard
+export default ContactCard

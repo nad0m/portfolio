@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import resume from '../../assets/adamnguyen_resume.pdf'
+
 const parseObject = (obj) => {
     const keys = Object.keys(obj);
     const values = Object.values(obj);
@@ -25,7 +27,7 @@ const toArray = (arr) => {
 }
 
 const parseLink = ({ text, url }) => {
-    return <a href={text === 'resume' ? '#' : url} target="_blank" rel="noopener noreferrer">{text}</a>
+    return <a href={text === 'adamnguyen_resume.pdf' ? resume : url} target="_blank" rel="noopener noreferrer">{text}</a>
 }
 
 const parseContact = (result = []) => {
@@ -62,6 +64,7 @@ const Wrapper = styled.div`
 const Input = styled.div`
   &::before {
     content: ">";
+    color: #ffffff;
     margin: 0 5px 0 0;
     font-family: 'Rubik', 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -71,16 +74,29 @@ const Input = styled.div`
 
 const Output = styled.div`
   color: #00f383;
-  &::before {
-    content: "";
-    margin: 0 0 0 1em;
+  margin: 0 0 0 .7em;
+  line-height: 1.5;
+  > a {
+      text-decoration: none;
+      color: #3863d9;
+      &:hover {
+        opacity: .9;
+      }
   }
+`
+
+const H = styled.span`
+    color: ${({ color }) => color};
 `
 
 const Command = ({ objectName, command }) => {
     return (
         <Wrapper>
-            <Input>{`${objectName}.${command.property}`}</Input>
+            <Input>
+            <H color="#ffffff">{objectName}</H>
+            <H color="#abb2bf">.</H>
+            <H color="#d9a13f">{command.property}</H>
+            </Input>
             <Output>{sanitizeOutput(command)}</Output>
         </Wrapper>
     );

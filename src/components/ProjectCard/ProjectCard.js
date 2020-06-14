@@ -92,7 +92,7 @@ const ProjectCard = ({
   return (
     <Wrapper>
       <ImageWrapper>
-        <Image src={imgSrc} />
+        <Image src={imgSrc} ref={imgElement} onError={onError} />
       </ImageWrapper>
       <Content>
         <h3>{title}</h3>

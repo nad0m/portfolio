@@ -181,7 +181,7 @@
           "Objective-C",
           "Swift"
         ],
-        "image": "https://portfolio-nad0m.s3-us-west-1.amazonaws.com/fever.png",
+        "image": "https://portfolio-nad0m.s3-us-west-1.amazonaws.com/feverv2.png",
         "links": {
           "demo": "https://apps.apple.com/us/app/fever-scout/id1095852565",
           "source": null
@@ -272,6 +272,7 @@
     "sectionTitle": "Contact Me",
     "title": "Adam (Huy) Nguyen",
     "description": "Feel free to check out my profile and reach out to me for any questions or inquiries!",
+    "avatar": "https://avatars2.githubusercontent.com/u/20848851?s=400&v=4",
     "links": {
       "email": "mailto:adamdnguyen10@gmail.com",
       "linkedin": "https://www.linkedin.com/in/an10",

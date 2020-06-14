@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 const Toggle = styled.button`
   position: relative;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 50px;
   height: 24px;
@@ -51,7 +51,7 @@ const Toggle = styled.button`
 
 const Switch = styled.div`
   position: absolute;
-  right: ${({ isDarkMode }) => isDarkMode ? '0px' : '27px'};
+  right: ${({ isDarkMode }) => isDarkMode ? '1px' : '27px'};
   width: 22px;
   height: 22px;
   background-color: #fafafa;

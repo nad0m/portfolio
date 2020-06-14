@@ -13,11 +13,11 @@ import Terminal from '../components/Terminal'
 import ProjectCard from '../components/ProjectCard'
 import ContactCard from '../components/ContactCard'
 import Footer from '../components/Footer'
-import { AboutSection, ProjectsSection } from '../components/Sections'
+import { AboutSection, ProjectsSection, ContactSection } from '../components/Sections'
 
 
 const Home = ({ data }) => {
-  const { about = {}, projects = {} } = data
+  const { about = {}, projects = {}, contact = {} } = data
   const [isDarkMode, setIsDarkMode] = useState(false)
   useEffect(() => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -40,10 +40,7 @@ const Home = ({ data }) => {
         <Navigation fields={['About', 'Projects', 'Contact']} />
         <AboutSection { ...about } />
         <ProjectsSection { ...projects} />
-        <TypeWriter anchorId="Contact" text="Contact Me" />
-        <ContentContainer>
-          <ContactCard />
-        </ContentContainer>
+        <ContactSection { ...contact } />
       </MainContainer>
       <Footer />
     </ThemeProvider>
