@@ -76,6 +76,8 @@ const Output = styled.div`
   color: #00f383;
   margin: 0 0 0 .7em;
   line-height: 1.5;
+  display: flex;
+  flex-wrap: wrap;
   > a {
       text-decoration: none;
       color: #3863d9;

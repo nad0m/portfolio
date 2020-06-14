@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components'
+import breakpoint from 'styled-components-breakpoint';
 
 import Command from './Command'
 
@@ -11,7 +12,15 @@ const Wrapper = styled.div`
   border-radius: 7px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 100%;
-  font-size: 14px;
+  font-size: 10px;
+
+  ${breakpoint('xs')`
+    font-size: 12px
+  `}
+
+  ${breakpoint('sm')`
+    font-size: 14px
+  `}
 `
 
 const Window = styled.div`
@@ -26,6 +35,7 @@ const Window = styled.div`
 const ButtonsContainer = styled.div`
   color: #000000;
   display: flex;
+  align-items: center;
   padding: 5px;
   background: linear-gradient(rgb(226, 224, 226), rgb(199, 198, 200));
 `
