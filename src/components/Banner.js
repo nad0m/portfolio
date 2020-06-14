@@ -73,8 +73,8 @@ const MobileToggle = styled.button`
   outline: none;
   border-radius: 50%;
   color: #d9e2ec;
-  right: 15px;
-  bottom: 15px;
+  right: 10px;
+  top: 10px;
   z-index: 99;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(2,43,148,1);
   -moz-box-shadow: 0px 0px 5px 0px rgba(2,43,148,1);

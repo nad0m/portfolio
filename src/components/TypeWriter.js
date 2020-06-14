@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.border};
   width: 92%;
   align-self: flex-start;
-  margin: 60px 0 0 30px;
+  margin: 60px 0 0 35px;
 
   ${breakpoint('sm')`
     margin: 60px 0 0 25px;

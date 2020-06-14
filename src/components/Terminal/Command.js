@@ -32,7 +32,7 @@ const parseObject = (obj) => {
     if (keys[0] === 'resume') {
         return <a href='#' target="_blank" rel="noopener noreferrer" key={values[0]}>{values[0]}</a>
     }
-        
+
     return <a href={values[0]} target="_blank" rel="noopener noreferrer" key={keys[0]}>{keys[0]}</a>
 }
 
@@ -47,6 +47,26 @@ const toArray = (arr) => {
 
     return `[${str}]`
 }
+
+const parseLink = ({ text, url }) => {
+    return <a href={text === 'resume' ? '#' : url} target="_blank" rel="noopener noreferrer">{text}</a>
+}
+
+const parseContact = (result = []) => {
+    return toArray(result.map(res => parseLink(res)))
+}
+
+const sanitizeOutput = ({ result }) => {
+    if (Array.isArray(result) && typeof result[0] === 'object') {
+        return parseContact(result)
+    } 
+    else if (Array.isArray(result)) {
+        return toArray(result)
+    }
+
+    return `"${result}"`
+}
+
 
 const Wrapper = styled.div`
   margin: 0 0 30px;
@@ -70,11 +90,11 @@ const Output = styled.div`
   }
 `
 
-const Command = ({ input, output }) => {
+const Command = ({ objectName, command }) => {
     return (
         <Wrapper>
-            <Input>{input}</Input>
-            <Output>{parseOutput(output)}</Output>
+            <Input>{`${objectName}.${command.property}`}</Input>
+            <Output>{sanitizeOutput(command)}</Output>
         </Wrapper>
     );
 }

@@ -3,6 +3,7 @@ import breakpoint from 'styled-components-breakpoint';
 
 
 export const MainContainer = styled.div`
+  background-color: ${({ theme }) => theme.colors.background};
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -16,6 +17,7 @@ export const MainContainer = styled.div`
 `
 
 export const ContentContainer = styled.div`
+  
   margin: 0 0 0 10px;
   min-width: 0;
   max-width: 920px;

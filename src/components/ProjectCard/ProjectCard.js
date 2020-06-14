@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styled from 'styled-components'
-import breakpoint from 'styled-components-breakpoint';
+import breakpoint from 'styled-components-breakpoint'
+import useLazyImg from 'react-use-lazy-img'
 
 import TagList from './TagList'
 import ButtonGroup from './ButtonGroup'
+import fallbackImg from '../../assets/placeholder.jpg'
 
 const Wrapper = styled.div`
   display: flex;
@@ -86,10 +88,13 @@ const ProjectCard = ({
   source = '',
   imageUrl
 }) => {
+  const tempImg = "https://portfolio-nad0m.s3-us-west-1.amazonaws.com/video-search.png"
+  const imgElement = useRef(null)
+  const { imgSrc, onError } = useLazyImg(tempImg, fallbackImg, imgElement)
   return (
     <Wrapper>
       <ImageWrapper>
-        <Image src="https://developers.google.com/youtube/images/youtube_home_page_player_api_720.png" />
+        <Image src={imgSrc} />
       </ImageWrapper>
       <Content>
         <h3>{title}</h3>

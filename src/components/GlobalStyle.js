@@ -4,7 +4,7 @@ export default createGlobalStyle`
   body {
     margin: 0;
     color: ${({ theme }) => theme.colors.mainText};
-    background-color: ${({ theme }) => theme.colors.background};
+    background-color: #424242;
     font-family: 'Rubik', 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;

@@ -17,7 +17,6 @@ const Wrapper = styled.div`
 const Window = styled.div`
   width: 100%;
   height: auto;
-  border: 1px solid #bbb;
   border-radius: 7px;
   display: flex;
   flex-direction: column;
@@ -25,6 +24,7 @@ const Window = styled.div`
 `
 
 const ButtonsContainer = styled.div`
+  color: #000000;
   display: flex;
   padding: 5px;
   background: linear-gradient(rgb(226, 224, 226), rgb(199, 198, 200));
@@ -85,31 +85,33 @@ const WindowHeader = styled.div`
     text-align: center;
 `
 
-const Terminal = () => {
-    return (
-        <Wrapper className="code">
-            <Window>
-                <ButtonsContainer>
-                    <Button color="#e34545" />
-                    <Button color="#e0b228" />
-                    <Button color="#42c933" />
-                    <WindowHeader>
-                        Terminal
+const Terminal = ({ objectName, commands }) => {
+  return (
+    <Wrapper className="code">
+      <Window>
+        <ButtonsContainer>
+          <Button color="#e34545" />
+          <Button color="#e0b228" />
+          <Button color="#42c933" />
+          <WindowHeader>
+            Terminal
                     </WindowHeader>
-                </ButtonsContainer>
-                <WindowContent>
-                    <TypeWriterBody>
-                        <Command input="Input" output="Output" />
-                        <Command input="Input" output="Output" />
-                        <Command input="Input" output="Output" />
-                        <Command input="Input" output="Output" />
-                        <Command input="Input" output="Output" />
-                        <TypeWriter />    
-                    </TypeWriterBody>
-                </WindowContent>
-            </Window>
-        </Wrapper>
-    )
+        </ButtonsContainer>
+        <WindowContent>
+          <TypeWriterBody>
+            {commands.map(command => (
+              <Command 
+                objectName={objectName} 
+                command={command}
+                key={command.property} 
+              />
+            ))}
+            <TypeWriter />
+          </TypeWriterBody>
+        </WindowContent>
+      </Window>
+    </Wrapper>
+  )
 }
 
 export default Terminal;
