@@ -13,9 +13,11 @@ import Terminal from '../components/Terminal'
 import ProjectCard from '../components/ProjectCard'
 import ContactCard from '../components/ContactCard'
 import Footer from '../components/Footer'
+import { AboutSection, ProjectsSection } from '../components/Sections'
 
 
-const Home = ({ about }) => {
+const Home = ({ data }) => {
+  const { about = {}, projects = {} } = data
   const [isDarkMode, setIsDarkMode] = useState(false)
   useEffect(() => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -36,14 +38,8 @@ const Home = ({ about }) => {
         <a name="top" />
         <SideBar />
         <Navigation fields={['About', 'Projects', 'Contact']} />
-
-        <TypeWriter anchorId="Projects" text="Projects" />
-        <ContentContainer>
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-        </ContentContainer>
+        <AboutSection { ...about } />
+        <ProjectsSection { ...projects} />
         <TypeWriter anchorId="Contact" text="Contact Me" />
         <ContentContainer>
           <ContactCard />

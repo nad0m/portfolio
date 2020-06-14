@@ -33,6 +33,7 @@ const Button = styled.a`
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
   box-sizing: border-box;
+
   > svg {
     margin: 0 0 0 5px;
   }
@@ -42,17 +43,42 @@ const Button = styled.a`
   }
 `
 
-const ButtonGroup = ({ demo = '#', source = '#' }) => {
+const DisabledButton = styled(Button)`
+  background-color: #e8e8e8;
+  box-shadow: none;
+  color: gray;
+  opacity: .4;
+  cursor: not-allowed;
+
+  &:hover {
+    opacity: .4;
+  }
+`
+
+const FinalButton = (props) => {
+
+  return props.hasLink ? (
+    <Button { ...props }>
+      {props.children}
+    </Button>
+  ) : (
+    <DisabledButton>
+      {props.children}
+    </DisabledButton>
+  )
+}
+
+const ButtonGroup = ({ demo = '', source = '' }) => {
   return (
     <Wrapper>
-      <Button href={source}>
+      <FinalButton href={demo} hasLink={!!demo}>
         Live Demo
         <LinkExternal size="14" />
-      </Button>
-      <Button background="#1b1c1d" href={demo}>
+      </FinalButton>
+      <FinalButton background="#1b1c1d" href={source} hasLink={!!source}>
         View Source
-      <GitBranch size="14" />
-      </Button>
+        <GitBranch size="14" />
+      </FinalButton>
     </Wrapper>
   )
 }

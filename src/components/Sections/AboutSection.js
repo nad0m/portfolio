@@ -6,7 +6,6 @@ import { DynamicText } from '../Shared'
 import Terminal from '../Terminal'
 
 const AboutSection = ({ navId, sectionTitle, description, terminalData }) => {
-
   return (
     <>
       <TypeWriter anchorId={navId} text={sectionTitle} />
@@ -19,3 +18,5 @@ const AboutSection = ({ navId, sectionTitle, description, terminalData }) => {
     </>
   )
 }
+
+export default AboutSection

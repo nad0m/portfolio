@@ -82,15 +82,13 @@ const Image = styled.img`
 
 const ProjectCard = ({
   title = 'Project title',
-  desc = 'Project description',
-  tags = [],
-  demo = '',
-  source = '',
-  imageUrl
+  description = 'Project description',
+  skills = [],
+  links = {},
+  image = ''
 }) => {
-  const tempImg = "https://portfolio-nad0m.s3-us-west-1.amazonaws.com/video-search.png"
   const imgElement = useRef(null)
-  const { imgSrc, onError } = useLazyImg(tempImg, fallbackImg, imgElement)
+  const { imgSrc, onError } = useLazyImg(image, fallbackImg, imgElement)
   return (
     <Wrapper>
       <ImageWrapper>
@@ -98,9 +96,9 @@ const ProjectCard = ({
       </ImageWrapper>
       <Content>
         <h3>{title}</h3>
-        <p>I decwill explain color types, specific keywords, and when to use which along with use-cases and examples. Disclaimer: this is not an article about color theory.</p>
-        <TagList />
-        <ButtonGroup />
+        <p>{description}</p>
+        <TagList tags={skills} />
+        <ButtonGroup { ...links }/>
       </Content>
     </Wrapper>
   )

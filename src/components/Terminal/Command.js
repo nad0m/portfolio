@@ -1,30 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const parseOutput = (val) => {
-
-    if (typeof val === 'object') {
-        if (Array.isArray(val)) {
-            if (typeof val[0] === 'object') {
-                const objects = [];
-                for (let i = 0; i < val.length; i++) {
-                    objects.push('"');
-                    objects.push(parseObject(val[i]));
-                    objects.push('"');
-
-                    if (i !== val.length - 1)
-                        objects.push(", ");
-                }
-                return ["[", ...objects, "]"];
-            }
-            return toArray(val);
-        }
-        return ['"', parseObject(val), '"'];
-    }
-
-    return `"${val}"`;
-}
-
 const parseObject = (obj) => {
     const keys = Object.keys(obj);
     const values = Object.values(obj);
@@ -53,7 +29,18 @@ const parseLink = ({ text, url }) => {
 }
 
 const parseContact = (result = []) => {
-    return toArray(result.map(res => parseLink(res)))
+    const objects = []
+    const links = result.map(res => parseLink(res))
+
+    for (let i = 0; i < links.length; i++) {
+        objects.push('"');
+        objects.push(links[i]);
+        objects.push('"');
+
+        if (i !== links.length - 1)
+            objects.push(", ");
+    }
+    return ["[", ...objects, "]"];
 }
 
 const sanitizeOutput = ({ result }) => {
