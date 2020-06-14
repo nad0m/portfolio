@@ -1,0 +1,282 @@
+{
+  "about": {
+    "navId": "About",
+    "sectionTitle": "Adam Nguyen",
+    "description": "I am a software engineer at Verizon Media currently developing front-end and user enhancement features for Yahoo! Shopping. I enjoy creating modern, responsive, and intuitive user experiences. Check out some of my projects below.",
+    "terminalData": {
+      "objectName": "Adam",
+      "commands": [
+        {
+          "property": "location",
+          "result": "San Jose, CA"
+        },
+        {
+          "property": "contact",
+          "result": [
+            {
+              "text": "adamdnguyen10@gmail.com",
+              "url": "mailto:adamdnguyen10@gmail.com"
+            },
+            {
+              "text": "LinkedIn",
+              "url": "https://www.linkedin.com/in/an10"
+            },
+            {
+              "text": "GitHub",
+              "url": "https://github.com/nad0m"
+            }
+          ]
+        },
+        {
+          "property": "resume",
+          "result": [
+            {
+              "text": "adamnguyen_resume.pdf",
+              "url": "adamnguyen_resume.pdf"
+            }
+          ]
+        },
+        {
+          "property": "interests",
+          "result": [
+            "football",
+            "bowling",
+            "billiards",
+            "snowboarding",
+            "web development",
+            "computer science"
+          ]
+        },
+        {
+          "property": "education",
+          "result": "B.S. Computer Science - California State University, Monterey Bay"
+        },
+        {
+          "property": "skills",
+          "result": [
+            "Java",
+            "JavaScript",
+            "React",
+            "Redux",
+            "GraphQL",
+            "NodeJS",
+            "iOS Development",
+            "Objective-C",
+            "Swift",
+            "Git"
+          ]
+        }
+      ]
+    }
+  },
+  "projects": {
+    "navId": "Projects",
+    "sectionTitle": "Projects",
+    "projectList": [
+      {
+        "title": "Yahoo! Shopping",
+        "type": "Web Application",
+        "description": "Yahoo! Shopping brings products and deals to valued customers through online discovery and inspiration.",
+        "skills": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "ReactJS",
+          "ES6",
+          "GraphQL"
+        ],
+        "image": "https://portfolio-nad0m.s3-us-west-1.amazonaws.com/yahoo.png",
+        "links": {
+          "demo": "https://shopping.yahoo.com",
+          "source": null
+        }
+      },
+      {
+        "title": "Video Search",
+        "type": "Web Application",
+        "description": "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+        "skills": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "ReactJS",
+          "ES6"
+        ],
+        "image": "https://portfolio-nad0m.s3-us-west-1.amazonaws.com/video-search.png",
+        "links": {
+          "demo": "https://nad0m.github.io/video-search/",
+          "source": "https://github.com/nad0m/video-search"
+        }
+      },
+      {
+        "title": "Image Search",
+        "type": "Web Application",
+        "description": "An image search application that uses the Unsplash API to retrieve relevant results. CSS Grid layout is used to handle the scaling of image sizes to fit neatly in the container.",
+        "skills": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "ReactJS",
+          "ES6"
+        ],
+        "image": "https://portfolio-nad0m.s3-us-west-1.amazonaws.com/image-search.png",
+        "links": {
+          "demo": "https://nad0m.github.io/image-search/",
+          "source": "https://github.com/nad0m/image-search"
+        }
+      },
+      {
+        "title": "Pattern Serializer and Deserializer",
+        "type": "Java Application",
+        "description": "A tool for encoding and decoding secret messages in the form of a string image. Similar to how barcodes work, the tool reads in a series of asterisks as input and provides the decoded message as output. Alternatively, a message can be encoded into a series of asterisks.",
+        "skills": [
+          "Java"
+        ],
+        "image": "https://portfolio-nad0m.s3-us-west-1.amazonaws.com/barcode.png",
+        "links": {
+          "demo": null,
+          "source": "https://github.com/nad0m/barcode-scanner"
+        }
+      },
+      {
+        "title": "Cataclysm Boardgame",
+        "type": "Web Application",
+        "description": "My capstone project done in my final year of college. The game is an emulation of a board game that can be played through multiple clients online in real time.",
+        "skills": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "NodeJS",
+          "Phaser.io",
+          "MySQL"
+        ],
+        "image": "https://portfolio-nad0m.s3-us-west-1.amazonaws.com/cataclysm.jpg",
+        "links": {
+          "demo": "https://cataclysm-capstone.herokuapp.com/",
+          "source": "https://github.com/nad0m/cataclysm-boardgame"
+        }
+      },
+      {
+        "title": "Portfolio (this page)",
+        "type": "Web Application",
+        "description": "A responsive website built using ReactJS to showcase my side projects. The goal was to not hard code any data into any components and only rely on external data sources such as an API or a local JSON file. This makes the site easy to maintain and reusable as a portfolio template.",
+        "skills": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "ReactJS",
+          "ES6"
+        ],
+        "image": "https://portfolio-nad0m.s3-us-west-1.amazonaws.com/portfolio.png",
+        "links": {
+          "demo": "https://nad0m.github.io/portfolio/",
+          "source": "https://github.com/nad0m/portfolio"
+        }
+      },
+      {
+        "title": "Fever Scout",
+        "type": "iOS App",
+        "description": "My first professional mobile development project built at my last company, VivaLNK. The app pairs with proprietary temperature sensors via Bluetooth and detects sharp temperature changes on the human body over time.",
+        "skills": [
+          "Objective-C",
+          "Swift"
+        ],
+        "image": "https://portfolio-nad0m.s3-us-west-1.amazonaws.com/feverv2.png",
+        "links": {
+          "demo": "https://apps.apple.com/us/app/fever-scout/id1095852565",
+          "source": null
+        }
+      },
+      {
+        "title": "Vital Scout",
+        "type": "iOS App",
+        "description": "A professional mobile development project built at my last company, VivaLNK. The app integrates directly with proprietary Bluetooth devices that displays wellness data onto screen.",
+        "skills": [
+          "Objective-C",
+          "Swift"
+        ],
+        "image": "https://portfolio-nad0m.s3-us-west-1.amazonaws.com/vital.png",
+        "links": {
+          "demo": "https://apps.apple.com/us/app/vital-scout/id1227969468",
+          "source": null
+        }
+      },
+      {
+        "title": "Pomodoro Clock",
+        "type": "Web Application",
+        "description": "The Pomodoro technique is a time management method that uses a timer to break down work into intervals. This simple app is used as the timer with customizable intervals.",
+        "skills": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "jQuery"
+        ],
+        "image": "https://portfolio-nad0m.s3-us-west-1.amazonaws.com/pomodoro.jpg",
+        "links": {
+          "demo": "https://nad0m.github.io/pomodoro-clock/",
+          "source": "https://github.com/nad0m/pomodoro-clock"
+        }
+      },
+      {
+        "title": "Simon Says",
+        "type": "Web Application",
+        "description": "Simon is a memory game that creates a series of tones and lights and requires a user to repeat the sequence. This was the project where my deep dive into CSS and its intricacies occurred. It was a tremendous learning experience.",
+        "skills": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "jQuery"
+        ],
+        "image": "https://portfolio-nad0m.s3-us-west-1.amazonaws.com/simon.jpg",
+        "links": {
+          "demo": "https://nad0m.github.io/simon/",
+          "source": "https://github.com/nad0m/simon"
+        }
+      },
+      {
+        "title": "Wikipedia Viewer",
+        "type": "Web Application",
+        "description": "An application that uses the Wikipedia API to return search results in the form of a thumbnail image and a brief description of each entry.",
+        "skills": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "jQuery"
+        ],
+        "image": "https://portfolio-nad0m.s3-us-west-1.amazonaws.com/wikipedia.png",
+        "links": {
+          "demo": "https://nad0m.github.io/wikipedia-viewer/",
+          "source": "https://github.com/nad0m/wikipedia-viewer"
+        }
+      },
+      {
+        "title": "Tic-Tac-Toe",
+        "type": "Web Application",
+        "description": "One of my very first web projects. This application is a simple Tic-Tac-Toe game that is played against an opponent using the Min-Max algorithm.",
+        "skills": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "jQuery"
+        ],
+        "image": "https://portfolio-nad0m.s3-us-west-1.amazonaws.com/tictactoe.jpg",
+        "links": {
+          "demo": "https://nad0m.github.io/tictactoe/",
+          "source": "https://github.com/nad0m/tictactoe"
+        }
+      }
+    ]
+  },
+  "contact": {
+    "navId": "Contact",
+    "sectionTitle": "Contact Me",
+    "title": "Adam (Huy) Nguyen",
+    "description": "Feel free to check out my profile and reach out to me for any questions or inquiries!",
+    "avatar": "https://avatars2.githubusercontent.com/u/20848851?s=400&v=4",
+    "links": {
+      "email": "mailto:adamdnguyen10@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/an10",
+      "github": "https://github.com/nad0m"
+    }
+  }
+}
