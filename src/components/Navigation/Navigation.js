@@ -26,13 +26,11 @@ const NavList = styled.ul`
   `}
 `
 
-const Navigation = () => {
+const Navigation = ({ fields = [] }) => {
   return (
     <Wrapper>
       <NavList>
-        <NavItem text="About" />
-        <NavItem text="Projects" />
-        <NavItem text="Contact" />
+        {fields.map((field, key) => <NavItem text={field} key={key} />)}
       </NavList>
     </Wrapper>
   )

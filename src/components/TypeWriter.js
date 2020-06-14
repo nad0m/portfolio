@@ -55,9 +55,10 @@ const Header = styled.h1`
   `}
 `
 
-const TypeWriter = ({ text = 'Your name here' }) => {
+const TypeWriter = ({ anchorId = '', text = 'Your name here' }) => {
   return (
     <Wrapper>
+      <a name={anchorId} />
       <HeaderWrapper>
         <Header>
           {text}

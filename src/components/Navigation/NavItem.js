@@ -30,11 +30,11 @@ const Item = styled.li`
   }
 `
 
-const NavItem = ({ text, href = '#' }) => {
+const NavItem = ({ text }) => {
   return (
     <Item>
       <Border />
-      <Anchor href={href}>
+      <Anchor href={`#${text}`} data-anchor={text}>
         {text}
       </Anchor>
     </Item>
