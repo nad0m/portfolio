@@ -17,7 +17,7 @@ const Wrapper = styled.div`
     > h1 {
       font-size: 2em;
     }
-    `}
+  `}
   ${breakpoint('md')`
     margin: 0 0 0 30px;
   `}
@@ -33,7 +33,7 @@ const typing = keyframes`
 
 const blinkCaret = keyframes`
   from, to { border-color: transparent }
-  50% { border-color: #3863d9 }
+  50% { border-color: initial }
 `
 
 const Header = styled.h1`

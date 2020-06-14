@@ -18,7 +18,7 @@ export const MainContainer = styled.div`
 export const ContentContainer = styled.div`
   margin: 0 0 0 10px;
   min-width: 0;
-  max-width: 720px;
+  max-width: 920px;
   padding: 0 0 0 25px;
 
   ${breakpoint('sm')`

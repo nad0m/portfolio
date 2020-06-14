@@ -34,7 +34,6 @@ const Image = styled.img`
   object-fit: contain;
   border-radius: 50%;
   padding: 10px;
-  border: 0;
   background-color: ${({ theme }) => theme.colors.background};
 
   ${breakpoint('md')`
@@ -44,7 +43,6 @@ const Image = styled.img`
     height: 100px;
     background-color: #ededed;
     border: 10px solid #fafafa;
-    box-shadow: none;
   `}
 `
 

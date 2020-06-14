@@ -10,8 +10,9 @@ const Wrapper = styled.footer`
   justify-content: center;
   width: 100%;
   height: 150px;
-  background-color: #e6f7ff;
+  background-color: #424242;
   z-index: 1;
+  color: #ffffff;
 `
 
 const ScrollUpWrapper = styled.div`
@@ -25,7 +26,7 @@ const ScrollUpWrapper = styled.div`
 
   &::after {
     content: '';
-    border-right: 1px solid ${({ theme }) => theme.colors.accentText};
+    border-right: 1px solid #3863d9;
   }
 
   ${breakpoint('md')`
@@ -42,7 +43,7 @@ const ScrollUpButton = styled.a`
   height: 38px;
   border-radius: 50%;
   color: #ffffff;
-  background-color: ${({ theme }) => theme.colors.accentText};
+  background-color: #3863d9;
 
   ${breakpoint('md')`
     bottom: -19px;

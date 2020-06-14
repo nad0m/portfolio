@@ -26,12 +26,12 @@ const Button = styled.a`
   text-decoration: none;
   margin: 0 3px;
   padding: 8px 16px;
-  background-color: ${({ background, theme }) => background || theme.colors.accentText};
-  color: #ffffff;
+  background-color: ${({ background, theme }) => background || theme.colors.demoButton};
+  color: ${({ background, theme }) => background ? '#ffffff' : theme.colors.demoText};
   border-radius: 3px;
-  -webkit-box-shadow: 0px 2px 13px 0px rgba(120,120,120,1);
-  -moz-box-shadow: 0px 2px 13px 0px rgba(120,120,120,1);
-  box-shadow: 0px 2px 13px 0px rgba(120,120,120,1);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
   box-sizing: border-box;
   > svg {
     margin: 0 0 0 5px;

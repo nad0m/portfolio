@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 
 import GlobalStyle from '../components/GlobalStyle'
@@ -16,6 +16,7 @@ import Footer from '../components/Footer'
 
 
 const Home = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false)
   useEffect(() => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -28,9 +29,9 @@ const Home = () => {
   }, [])
 
   return (
-    <ThemeProvider theme={theme.lightMode}>
+    <ThemeProvider theme={isDarkMode ? theme.darkMode : theme.lightMode}>
       <GlobalStyle />
-      <Banner />
+      <Banner isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <MainContainer>
         <a name="top" />
         <SideBar />

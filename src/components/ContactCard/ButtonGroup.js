@@ -43,9 +43,9 @@ const Button = styled.a`
   background-color: ${({ background, theme }) => background || theme.colors.accentText};
   color: #ffffff;
   border-radius: 3px;
-  -webkit-box-shadow: 0px 2px 13px 0px rgba(120,120,120,1);
-  -moz-box-shadow: 0px 2px 13px 0px rgba(120,120,120,1);
-  box-shadow: 0px 2px 13px 0px rgba(120,120,120,1);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
   box-sizing: border-box;
   min-width: 106px;
 
