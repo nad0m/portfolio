@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 
+import fireTracker from '../utils/fireTracker'
 import GlobalStyle from '../components/GlobalStyle'
 import { theme } from '../config/constants'
 import { MainContainer } from '../components/Containers'
@@ -15,6 +16,7 @@ const Home = ({ data }) => {
   const { about = {}, projects = {}, contact = {} } = data
   const [isDarkMode, setIsDarkMode] = useState(false)
   useEffect(() => {
+    fireTracker()
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
