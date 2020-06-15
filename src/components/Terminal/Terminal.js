@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import styled, { keyframes } from 'styled-components'
 import breakpoint from 'styled-components-breakpoint';
 
 import Command from './Command'
+import useWindowSize from '../../utils/useWindowSize'
 
 const Wrapper = styled.div`
   display: flex;
@@ -100,15 +101,7 @@ const WindowHeader = styled.div`
 `
 
 const Terminal = ({ objectName, commands }) => {
-  const [windowSize, setWindowSize] = useState("Calculating window size...")
-  const windowRef = useRef(null)
-  const onWindowResize = (e) => {
-    setWindowSize(`${windowRef?.current?.clientWidth}w x ${windowRef?.current?.clientHeight}h`)
-  }
-  window.addEventListener('resize', onWindowResize);
-  useEffect(() => {
-    onWindowResize()
-  }, [])
+  const { windowRef, windowSize } = useWindowSize()
 
   return (
     <Wrapper className="code" ref={windowRef}>
