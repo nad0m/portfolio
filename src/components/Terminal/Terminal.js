@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styled, { keyframes } from 'styled-components'
 import breakpoint from 'styled-components-breakpoint';
 
@@ -76,44 +76,58 @@ const TypeWriter = styled.div`
 `
 
 const Button = styled.button`
-    position: relative;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
-    margin: 3.5px;
-    background: ${({ color }) => color};
+  position: relative;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 3.5px;
+  background: ${({ color }) => color};
 `
 
 const WindowHeader = styled.div`
+  position: static;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  ${breakpoint('sm')`
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
+  `}
 `
 
 const Terminal = ({ objectName, commands }) => {
+  const [windowSize, setWindowSize] = useState("Calculating window size...")
+  const windowRef = useRef(null)
+  const onWindowResize = (e) => {
+    setWindowSize(`${windowRef?.current?.clientWidth}w x ${windowRef?.current?.clientHeight}h`)
+  }
+  window.addEventListener('resize', onWindowResize);
+  useEffect(() => {
+    onWindowResize()
+  }, [])
+
   return (
-    <Wrapper className="code">
+    <Wrapper className="code" ref={windowRef}>
       <Window>
         <ButtonsContainer>
           <Button color="#e34545" />
           <Button color="#e0b228" />
           <Button color="#42c933" />
           <WindowHeader>
-            Terminal
+            Terminal -- {windowSize}
           </WindowHeader>
         </ButtonsContainer>
         <WindowContent>
           <TypeWriterBody>
             {commands.map(command => (
-              <Command 
-                objectName={objectName} 
+              <Command
+                objectName={objectName}
                 command={command}
-                key={command.property} 
+                key={command.property}
               />
             ))}
             <TypeWriter />
