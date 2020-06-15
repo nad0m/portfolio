@@ -71,11 +71,11 @@ const FinalButton = (props) => {
 const ButtonGroup = ({ demo = '', source = '' }) => {
   return (
     <Wrapper>
-      <FinalButton href={demo} hasLink={!!demo}>
+      <FinalButton href={demo} hasLink={!!demo} target="_blank" rel="noopener noreferrer">
         Live Demo
         <LinkExternal size="14" />
       </FinalButton>
-      <FinalButton background="#1b1c1d" href={source} hasLink={!!source}>
+      <FinalButton background="#1b1c1d" href={source} hasLink={!!source} target="_blank" rel="noopener noreferrer">
         View Source
         <GitBranch size="14" />
       </FinalButton>

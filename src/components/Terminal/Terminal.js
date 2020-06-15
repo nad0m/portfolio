@@ -105,7 +105,7 @@ const Terminal = ({ objectName, commands }) => {
           <Button color="#42c933" />
           <WindowHeader>
             Terminal
-                    </WindowHeader>
+          </WindowHeader>
         </ButtonsContainer>
         <WindowContent>
           <TypeWriterBody>

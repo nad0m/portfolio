@@ -3,17 +3,6 @@ import styled from 'styled-components'
 
 import resume from '../../assets/adamnguyen_resume.pdf'
 
-const parseObject = (obj) => {
-    const keys = Object.keys(obj);
-    const values = Object.values(obj);
-
-    if (keys[0] === 'resume') {
-        return <a href='#' target="_blank" rel="noopener noreferrer" key={values[0]}>{values[0]}</a>
-    }
-
-    return <a href={values[0]} target="_blank" rel="noopener noreferrer" key={keys[0]}>{keys[0]}</a>
-}
-
 const toArray = (arr) => {
 
     const str = arr.reduce((acc, item) => {
@@ -27,7 +16,7 @@ const toArray = (arr) => {
 }
 
 const parseLink = ({ text, url }) => {
-    return <a href={text === 'adamnguyen_resume.pdf' ? resume : url} target="_blank" rel="noopener noreferrer">{text}</a>
+    return <a href={text === 'adamnguyen_resume.pdf' ? resume : url} key={text} target="_blank" rel="noopener noreferrer">{text}</a>
 }
 
 const parseContact = (result = []) => {

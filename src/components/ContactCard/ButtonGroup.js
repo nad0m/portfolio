@@ -56,15 +56,15 @@ const Button = styled.a`
 const ButtonGroup = ({ links: { email, linkedin, github } = {} }) => {
   return (
     <Wrapper>
-      <Button href={email} background="#dd4b39">
+      <Button href={email} background="#dd4b39" target="_blank" rel="noopener noreferrer">
         <span>Email</span>
         <Mail size="16" />
       </Button>
-      <Button href={linkedin} background="#1f88be">
+      <Button href={linkedin} background="#1f88be" target="_blank" rel="noopener noreferrer">
         <span>LinkedIn</span>
       <SocialLinkedin size="16" />
       </Button>
-      <Button href={github} background="#1b1c1d">
+      <Button href={github} background="#1b1c1d" target="_blank" rel="noopener noreferrer">
         <span>GitHub</span>
       <SocialGithub size="16" />
       </Button>

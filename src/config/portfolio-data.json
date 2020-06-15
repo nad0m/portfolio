@@ -2,7 +2,7 @@
   "about": {
     "navId": "About",
     "sectionTitle": "Adam Nguyen",
-    "description": "I am a software engineer at Verizon Media currently developing front-end and user enhancement features for Yahoo! Shopping. I enjoy creating modern, responsive, and intuitive user experiences. Check out some of my projects below.",
+    "description": "I am a software engineer at Verizon Media currently developing UI and user enhancement features for Yahoo! Shopping. I enjoy creating modern, responsive, and intuitive user experiences. Check out some of my projects below.",
     "terminalData": {
       "objectName": "Adam",
       "commands": [
@@ -94,7 +94,7 @@
       {
         "title": "Video Search",
         "type": "Web Application",
-        "description": "My first major project using ReactJS. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
+        "description": "My first project using React. The app is a simple YouTube search application that allows users to search and view videos provided by the YouTube API. It was meant to give me a better understanding of how the React library works and the importance of reusing components.",
         "skills": [
           "HTML5",
           "CSS3",
@@ -159,7 +159,7 @@
       {
         "title": "Portfolio (this page)",
         "type": "Web Application",
-        "description": "A responsive website built using ReactJS to showcase my side projects. The goal was to not hard code any data into any components and only rely on external data sources such as an API or a local JSON file. This makes the site easy to maintain and reusable as a portfolio template.",
+        "description": "A responsive website built using React to showcase my side projects. The goal was to not hard code any data into any components and only rely on external data sources such as an API or a local JSON file. This makes the site easy to maintain and reusable as a portfolio template.",
         "skills": [
           "HTML5",
           "CSS3",
