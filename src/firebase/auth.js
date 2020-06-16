@@ -12,7 +12,8 @@ export const signInAnonymously = () => {
   })
 }
 
-firebase.auth().onAuthStateChanged((user) => {
+firebase.auth().onAuthStateChanged(async (user) => {
+  await new Promise(r => setTimeout(r, 2000))
   user && logVisitor()
 })
 
