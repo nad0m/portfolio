@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint';
 import { LinkExternal, GitBranch } from '@styled-icons/boxicons-regular'
 
+import analyticsClickHandler from '../../config/analyticsClickHandler';
+
 const Wrapper = styled.div`
   display: flex;
   font-size: 10px;
@@ -58,24 +60,24 @@ const DisabledButton = styled(Button)`
 const FinalButton = (props) => {
 
   return props.hasLink ? (
-    <Button { ...props }>
+    <Button {...props}>
       {props.children}
     </Button>
   ) : (
-    <DisabledButton>
-      {props.children}
-    </DisabledButton>
-  )
+      <DisabledButton>
+        {props.children}
+      </DisabledButton>
+    )
 }
 
 const ButtonGroup = ({ demo = '', source = '' }) => {
   return (
     <Wrapper>
-      <FinalButton href={demo} hasLink={!!demo} target="_blank" rel="noopener noreferrer">
+      <FinalButton href={demo} onClick={e => analyticsClickHandler('Live Demo', demo)} hasLink={!!demo} target="_blank" rel="noopener noreferrer">
         Live Demo
         <LinkExternal size="14" />
       </FinalButton>
-      <FinalButton background="#1b1c1d" href={source} hasLink={!!source} target="_blank" rel="noopener noreferrer">
+      <FinalButton background="#1b1c1d" onClick={e => analyticsClickHandler('View Source', source)} href={source} hasLink={!!source} target="_blank" rel="noopener noreferrer">
         View Source
         <GitBranch size="14" />
       </FinalButton>

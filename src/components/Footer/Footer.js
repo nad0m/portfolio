@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint';
 import { UpArrowAlt } from '@styled-icons/boxicons-regular'
+import analyticsClickHandler from '../../config/analyticsClickHandler';
 
 const Wrapper = styled.footer`
   position: relative;
@@ -57,7 +58,7 @@ const Footer = () => {
   return (
     <Wrapper>
       <ScrollUpWrapper>
-        <ScrollUpButton href="#top" data-anchor="top" >
+        <ScrollUpButton href="#top" onClick={e => analyticsClickHandler('Scroll top', 'top')} data-anchor="top" >
           <UpArrowAlt />
         </ScrollUpButton>
       </ScrollUpWrapper>

@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint';
 import { Mail, SocialLinkedin, SocialGithub } from '@styled-icons/foundation'
+import analyticsClickHandler from '../../config/analyticsClickHandler';
 
 const Wrapper = styled.div`
   display: flex;
@@ -56,15 +57,15 @@ const Button = styled.a`
 const ButtonGroup = ({ links: { email, linkedin, github } = {} }) => {
   return (
     <Wrapper>
-      <Button href={email} background="#dd4b39" target="_blank" rel="noopener noreferrer">
+      <Button href={email} onClick={e => analyticsClickHandler('Email_contact', email)} background="#dd4b39" target="_blank" rel="noopener noreferrer">
         <span>Email</span>
         <Mail size="16" />
       </Button>
-      <Button href={linkedin} background="#1f88be" target="_blank" rel="noopener noreferrer">
+      <Button href={linkedin} onClick={e => analyticsClickHandler('LinkedIn_contact', linkedin)} background="#1f88be" target="_blank" rel="noopener noreferrer">
         <span>LinkedIn</span>
       <SocialLinkedin size="16" />
       </Button>
-      <Button href={github} background="#1b1c1d" target="_blank" rel="noopener noreferrer">
+      <Button href={github} onClick={e => analyticsClickHandler('GitHub_contact', github)} background="#1b1c1d" target="_blank" rel="noopener noreferrer">
         <span>GitHub</span>
       <SocialGithub size="16" />
       </Button>

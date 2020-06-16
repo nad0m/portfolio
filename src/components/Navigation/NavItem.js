@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { analytics } from '../../firebase'
 
 const Border = styled.div`
   border-top: 1px solid ${({ theme }) => theme.colors.accentText};
@@ -31,10 +32,13 @@ const Item = styled.li`
 `
 
 const NavItem = ({ text }) => {
+  const navClickHandler = e => {
+    analytics.logEvent('search', { search_term: text })
+  }
   return (
     <Item>
       <Border />
-      <Anchor href={`#${text}`} data-anchor={text}>
+      <Anchor href={`#${text}`} onClick={navClickHandler} data-anchor={text}>
         {text}
       </Anchor>
     </Item>

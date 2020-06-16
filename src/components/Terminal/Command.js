@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import resume from '../../assets/adamnguyen_resume.pdf'
+import analyticsClickHandler from '../../config/analyticsClickHandler';
 
 const toArray = (arr) => {
 
@@ -16,7 +17,7 @@ const toArray = (arr) => {
 }
 
 const parseLink = ({ text, url }) => {
-    return <a href={text === 'adamnguyen_resume.pdf' ? resume : url} key={text} target="_blank" rel="noopener noreferrer">{text}</a>
+    return <a href={text === 'adamnguyen_resume.pdf' ? resume : url} onClick={e => analyticsClickHandler(text, url)} key={text} target="_blank" rel="noopener noreferrer">{text}</a>
 }
 
 const parseContact = (result = []) => {

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 
-import fireTracker from '../utils/fireTracker'
 import GlobalStyle from '../components/GlobalStyle'
 import { theme } from '../config/constants'
 import { MainContainer } from '../components/Containers'
@@ -10,13 +9,15 @@ import Navigation from '../components/Navigation'
 import SideBar from '../components/SideBar'
 import Footer from '../components/Footer'
 import { AboutSection, ProjectsSection, ContactSection } from '../components/Sections'
-
+import { signInAnonymously } from '../firebase/auth'
+import { analytics } from '../firebase'
 
 const Home = ({ data }) => {
   const { about = {}, projects = {}, contact = {} } = data
   const [isDarkMode, setIsDarkMode] = useState(false)
   useEffect(() => {
-    fireTracker()
+    analytics.logEvent('page_view')
+    signInAnonymously()
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();

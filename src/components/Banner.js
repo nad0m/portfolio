@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint';
 import { Sun, Moon } from '@styled-icons/boxicons-solid'
 import { RightArrowAlt } from '@styled-icons/boxicons-regular'
+import analyticsClickHandler from '../config/analyticsClickHandler';
 
 const Wrapper = styled.div`
   position: relative;
@@ -86,18 +87,28 @@ const MobileToggle = styled.button`
 `
 
 const Banner = ({ text = 'Hey! Toggle between light and dark themes over here', isDarkMode, setIsDarkMode }) => {
+  const onToggleHandler = e => {
+    analyticsClickHandler('Theme Toggle', isDarkMode ? 'Light' : 'Dark')
+    setIsDarkMode(!isDarkMode)
+  }
+
+  const onMobileToggleHandler = e => {
+    analyticsClickHandler('Theme Toggle Mobile', isDarkMode ? 'Light' : 'Dark')
+    setIsDarkMode(!isDarkMode)
+  }
+  
   return (
     <>
       <Wrapper>
         {text}
         <RightArrowAlt size='24' />
-        <Toggle onClick={e => setIsDarkMode(!isDarkMode)}>
+        <Toggle onClick={onToggleHandler}>
           <Switch isDarkMode={isDarkMode} />
           <Moon size="16" />
           <Sun size="16" />
         </Toggle>
       </Wrapper>
-      <MobileToggle onClick={e => setIsDarkMode(!isDarkMode)}>
+      <MobileToggle onClick={onMobileToggleHandler}>
         {isDarkMode ? <Moon size="30" /> : <Sun size="30" />}
       </MobileToggle>
     </>
