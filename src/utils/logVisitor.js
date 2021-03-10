@@ -9,7 +9,8 @@ const logVisitor = async () => {
   const { ip } = await ipResponse.json()
   const geoResponse = await fetch(`${geoIpLookup}${ip}`)
   const result = await geoResponse.json()
-  writeToFireStore(collectionId, `${Date.now()}`, result)
+  const date = new Date()
+  writeToFireStore(collectionId, `${date}`, result)
 }
 
 export default logVisitor
