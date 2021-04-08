@@ -2,7 +2,7 @@
   "about": {
     "navId": "About",
     "sectionTitle": "Adam Nguyen",
-    "description": "I am a software engineer at Verizon Media currently developing UI and user enhancement features for Yahoo! Shopping. I enjoy creating modern, responsive, and intuitive user experiences. Check out some of my projects below.",
+    "description": "Hello! I'm Adam, a software engineer based in Sunnyvale. I specialize in web development. I enjoy creating responsive and intuitive user experiences. Feel free to check out some of my works below.",
     "terminalData": {
       "objectName": "Adam",
       "commands": [
@@ -43,6 +43,8 @@
             "bowling",
             "billiards",
             "snowboarding",
+            "cycling",
+            "UX design",
             "web development",
             "computer science"
           ]
@@ -56,6 +58,7 @@
           "result": [
             "Java",
             "JavaScript",
+            "TypeScript",
             "React",
             "Redux",
             "GraphQL",
